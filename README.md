@@ -40,13 +40,13 @@
 ## Hey — I'm Pascal 👋
 
 I run **[Ingenious Digital](https://ingeniousdigital.com)**, a product studio in
-Fort Lauderdale. By day that means fractional CTO work, custom software,
+Fort Lauderdale, and **[IGD Dev Lab](https://igddev.com)**, where the more
+ambitious ideas get built. By day that's fractional CTO work, custom software,
 automations, and the websites and CRMs that keep South Florida businesses
-running. By night it means GPU kernels, Zig shells, ESP32 firmware, agent
-fleets, and games — because the interesting problems don't respect job titles.
+running. By night it's GPU kernels, Zig shells, ESP32 firmware, agent fleets and
+games — because the interesting problems don't respect job titles.
 
-It looks like a wildly scattered range. It's actually one habit applied to all
-of it:
+It looks like a wildly scattered range. It's one habit applied to all of it:
 
 > Turn a fuzzy problem into a thing you can point at · keep the human in charge
 > wherever software can do real damage · measure it against a fair baseline ·
@@ -60,13 +60,40 @@ Alpha is called alpha here. That's the whole trick.
 
 | Lane | What that means on a Tuesday | Where to look |
 | :-- | :-- | :-- |
-| 🌐 **Web, commerce & content** | Marketing sites, Shopify themes, WordPress builds, SEO and lead-gen funnels for businesses with actual revenue on the line | [ingeniousdigital.com](https://ingeniousdigital.com) |
-| 📞 **CRM, comms & automation** | ButlerCRM, NexusDialer, communication systems, business automation wired into the stack a client already has | [services](https://ingeniousdigital.com/services) |
+| 🌐 **Web, commerce & content** | Marketing sites, Shopify themes, WordPress builds, SEO and lead-gen funnels for businesses with real revenue on the line | [ingeniousdigital.com](https://ingeniousdigital.com) |
+| 📞 **CRM, comms & automation** | CRM platforms, contact-center systems, business automation wired into the stack a client already has | [services](https://ingeniousdigital.com/services) |
 | 🤖 **AI agents & MCP infrastructure** | Supervised agent fleets, scoped MCP access, audited operations — the agent proposes, a human still approves | [PicoArmy](https://github.com/PascalAI2024/picoarmy) |
-| 🔬 **ML & GPU research** | Leakage-safe datasets, CUDA kernel work, sub-2-bit quantization studies — published with the raw numbers and the failures | [Hugging Face](https://huggingface.co/x0me) |
+| 🔬 **ML & GPU research** | Leakage-safe datasets, CUDA kernel work, sub-2-bit quantization studies — published with the raw numbers *and* the failures | [Hugging Face](https://huggingface.co/x0me) |
 | ⚙️ **Native tools & systems** | A Zig shell workspace, a capability-safe agent language, self-hosted WireGuard access | [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag) · [PAL](https://github.com/PascalAI2024/pal-lang) · [kintunnel](https://github.com/PascalAI2024/kintunnel) |
-| 🎮 **Games, 3D & real-time** | Browser 3D, real-time sims, and a satellite view of the planet that runs on real spatial data | [gods-eye-view](https://github.com/PascalAI2024/gods-eye-view) · [IGD Dev Lab](https://igddev.com) |
+| 🎮 **Games, 3D & real-time** | Deterministic multiplayer combat, orbital mechanics, persistent galaxy state, browser 3D | [IGD Dev Lab](https://igddev.com) |
 | 🔌 **Embedded & hardware** | ESP32-S3 firmware, AMOLED + voice interfaces, guarded tool bridges on a chip the size of a stamp | [JarvisNano](https://github.com/PascalAI2024/JarvisNano) |
+
+**Working stack:** real-time systems (WebSocket, multiplayer, live state sync) ·
+AI/ML integration (LLMs, RAG, vector search) · cross-platform (Flutter, Dioxus,
+React Native, WASM) · full-stack TypeScript (Next.js, NestJS, Prisma, tRPC) ·
+systems programming (Rust, Go, Zig, C) · Elixir/Phoenix · Python ·
+infrastructure (Docker, Traefik, CI/CD, Dokploy).
+
+---
+
+## The house platform
+
+The studio runs on tooling we built for ourselves. It's source-private, so it
+appears here as capability, not as proof — the shapes are public, the machinery
+isn't.
+
+| System | What it does | Public state |
+| :-- | :-- | :-- |
+| **JarvisMCP** | One Code-Mode MCP gateway that replaces dozens of individual MCP servers with two tools, exposing a company's whole operations surface to agents — safely and with scoped access | Source-private · shape described [here](https://github.com/PascalAI2024/picoarmy) |
+| **Overwatch** | The operations console — Bun, TanStack Start, PostgreSQL, Drizzle. Where agent and system activity becomes something a human can actually supervise | Source-private |
+| **ButlerCRM** | Client CRM platform on Elixir / Phoenix LiveView, built for follow-up that doesn't get dropped | Source-private · product |
+| **GigaBrain** | A reusable knowledge-vault template: an agent-pointable operating memory that ships with structure and *no data* — nothing client-, project-, or person-specific | Source-private · template |
+| **Agent sandbox fleet** | Self-hosted, disposable environments so agents can run real work without touching anything that matters | Source-private |
+
+What never gets published: client data, credentials, production topology,
+security controls, internal prompts, automation recipes, or access paths. The
+[public boundaries](https://github.com/PascalAI2024/portfolio/blob/main/PUBLIC_BOUNDARIES.md)
+are written down so the line isn't improvised.
 
 ---
 
@@ -154,6 +181,48 @@ unfinished tracks stay labeled unfinished.
 
 ---
 
+## Everything public, with its honest status
+
+No inflation. Status labels are the conservative ones from the
+[public project index](https://github.com/PascalAI2024/portfolio/blob/main/docs/PUBLIC_PROJECT_INDEX.md).
+
+| Project | Lane | Where it actually stands |
+| :-- | :-- | :-- |
+| [fplbench](https://github.com/PascalAI2024/fplbench) | Applied ML / data | Live 2026/27 benchmark — dataset, Space, frozen predictions, automated scoring |
+| [Maple CUDA](https://github.com/PascalAI2024/maple-preview-windows-cuda) | GPU performance | v1.0 release plus post-release MMQ research; raw logs and CPU-reference matrix public |
+| [Qwen Quant Bench](https://github.com/PascalAI2024/qwen38-27b-quant-bench) | LLM research | Completed research record — recipes, harnesses, raw results, corrections log |
+| [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag) | Native dev tools | **Active alpha.** Check current CI before you adopt it |
+| [JarvisNano](https://github.com/PascalAI2024/JarvisNano) | Embedded AI | Hardware release candidate — not a finished consumer product |
+| [VibeGotchi](https://github.com/PascalAI2024/VibeGotchi) | Web product | [Live](https://vibegotchi.pages.dev) — read-only OAuth, documented permission model |
+| [PicoArmy](https://github.com/PascalAI2024/picoarmy) | Agent fleets | Public prototype — Postgres/RLS model, MCP scopes, audit paths. No public deployment claimed |
+| [Verrow](https://github.com/PascalAI2024/verrow) | Data operations | Public prototype — ingestion and mapping done, later surfaces staged |
+| [KinTunnel](https://github.com/PascalAI2024/kintunnel) | Self-hosted networking | Runnable MVP, dry-run by default; held back pending dependency-security cleanup |
+| [Kaggle Field Notes](https://github.com/PascalAI2024/Kaggle-Portfolio) | Competitive ML | Evidence framework; the result inventory is deliberately incomplete |
+| [PAL](https://github.com/PascalAI2024/pal-lang) | Language research | Early concept. A statement of intent, not a finished system |
+
+Forks and source-private repos are never presented as original public proof.
+Stars are a nice signal; they are not evidence.
+
+---
+
+## Out of the Dev Lab
+
+Products built at [IGD Dev Lab](https://igddev.com) — the studio's own bets,
+deployed across production domains.
+
+**Oxide Studio** unified AI dev environment driving 700+ models · **Juba**
+investigative dossier builder with a force-directed knowledge graph ·
+**NexusDialer** enterprise contact center with BYOS · **ZeroChat** open-source
+voice agent that runs entirely on-device · **DataAlchemy** intelligent column
+mapping and automated data workflows · **TariffSync** HTS classification for
+auto-parts imports · **VocalFrame** text to talking-head video · **ZeroInbox**
+gamified email client · **CallCue** privacy-first calling · **GlowClient**
+salon & spa management · **HVAC Recruit** EPA-certified technician staffing ·
+**HerCircle** personal safety app · plus a real-time **space strategy game**
+with deterministic combat and orbital mechanics.
+
+---
+
 ## The range, as a picture
 
 ```mermaid
@@ -166,8 +235,9 @@ flowchart TB
     P --> G[Games, 3D and real-time]
     P --> H[Embedded and hardware]
 
-    W --> CL{{Client work<br/>running in production}}
+    W --> CL{{Source-private<br/>running in production}}
     C --> CL
+    G --> CL
     A --> PA(PicoArmy)
     A --> ZZ(ZiggyZag)
     R --> F(fplbench)
@@ -175,9 +245,8 @@ flowchart TB
     R --> M(Maple CUDA)
     S --> PL(PAL)
     S --> KT(kintunnel)
-    G --> GE(gods-eye-view)
-    G --> VG(VibeGotchi)
     H --> J(JarvisNano)
+    A --> VG(VibeGotchi)
 
     PA --> E{{Public artifact<br/>or an explicit limitation}}
     ZZ --> E
@@ -186,24 +255,10 @@ flowchart TB
     M --> E
     PL --> E
     KT --> E
-    GE --> E
     VG --> E
     J --> E
+    CL --> B[Boundary stated,<br/>never embellished]
 ```
-
-### More public work
-
-- **[VibeGotchi](https://github.com/PascalAI2024/VibeGotchi)** — a [live](https://vibegotchi.pages.dev) GitHub-powered virtual pet that evolves with your commit activity. Read-only OAuth, transparent scoring, shareable artifacts. Yes, it judges your streak.
-- **[gods-eye-view](https://github.com/PascalAI2024/gods-eye-view)** — a spy-satellite simulator in the browser, except the spatial data is real.
-- **[PicoArmy](https://github.com/PascalAI2024/picoarmy)** — a TypeScript/PostgreSQL command center for supervised self-hosted agent fleets, with scoped MCP access and audited operations. No public deployment is claimed.
-- **[Verrow](https://github.com/PascalAI2024/verrow)** — an open lead-data quality workbench. Ingestion and mapping are implemented; the later data surfaces are labeled prototype, because they are.
-- **[Qwen quant benchmark](https://github.com/PascalAI2024/qwen38-27b-quant-bench)** — sub-2-bit quantization and speculative-decoding research on a 16 GB card, published with raw results, limitations, and a corrections log.
-- **[PAL](https://github.com/PascalAI2024/pal-lang)** · **[kintunnel](https://github.com/PascalAI2024/kintunnel)** — a capability-safe language for supervised agents, and self-hosted WireGuard access for people you trust.
-
-A pile of the production work — ButlerCRM, TraceKill, Overwatch, NexusDialer,
-client storefronts — is source-private and appears here only as labeled context.
-Private work never gets counted as public proof just because the description
-sounds good.
 
 ---
 
@@ -214,14 +269,19 @@ sounds good.
 3. **The human boundary must be legible.** Approval, privacy, credentials, and irreversible actions are product decisions — not footnotes.
 4. **Status travels with the claim.** A prototype does not get promoted to production by adjective.
 
+More on the method: [capability map](https://github.com/PascalAI2024/portfolio/blob/main/capabilities/README.md) ·
+[system shapes](https://github.com/PascalAI2024/portfolio/blob/main/architecture/README.md) ·
+[case studies](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/README.md) ·
+[evidence ledger](https://github.com/PascalAI2024/portfolio/blob/main/proof/README.md)
+
 ---
 
 ## Also true
 
-- Half my infrastructure is named after a fictional butler. I have made peace with this.
-- A Zig shell, a Roblox scene, and a CUDA kernel can land in the same week of commits. This is a feature.
+- Half my infrastructure is named after a fictional butler. I've made peace with this.
+- A Zig shell, a Roblox scene and a CUDA kernel can land in the same week of commits. This is a feature.
 - I keep a public corrections log, which is the least flattering and most useful page I maintain.
-- The stack ranges from `Shopify Liquid` to `ESP-IDF`. Nobody planned that. It just kept being the right tool.
+- The stack runs from `Shopify Liquid` to `ESP-IDF`. Nobody planned that. It just kept being the right tool.
 
 ---
 
