@@ -69,9 +69,9 @@
 
       <g opacity="1">
         <text x="40" y="400">
-          <tspan fill="#3FCF8E">pascal@igd</tspan><tspan fill="#6F829C">:</tspan><tspan fill="#47D7FF">~</tspan><tspan fill="#6F829C">$ </tspan><tspan fill="#6F829C" font-style="italic"># yes, all of it. the receipts are below.</tspan>
+          <tspan fill="#3FCF8E">pascal@igd</tspan><tspan fill="#6F829C">:</tspan><tspan fill="#47D7FF">~</tspan><tspan fill="#6F829C">$ </tspan><tspan fill="#6F829C" font-style="italic"># 15 directories. none of them empty.</tspan>
         </text>
-        <rect x="566" y="386" width="10" height="19" fill="#47D7FF">
+        <rect x="514" y="386" width="10" height="19" fill="#47D7FF">
           <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite" calcMode="discrete"/>
         </rect>
       </g>
