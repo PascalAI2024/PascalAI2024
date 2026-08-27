@@ -44,24 +44,24 @@
       </text>
 
       <g font-size="15.5">
-        <g fill="#0E7FA8" opacity="0">
-          <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.5s" fill="freeze"/>
+        <g fill="#0E7FA8" opacity="1">
+          <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="0.85s" begin="0s" fill="freeze"/>
           <text x="56" y="296">websites/</text>
           <text x="284" y="296">shopify/</text>
           <text x="512" y="296">wordpress/</text>
           <text x="740" y="296">crm-systems/</text>
           <text x="968" y="296">automations/</text>
         </g>
-        <g fill="#A96C0C" opacity="0">
-          <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.85s" fill="freeze"/>
+        <g fill="#A96C0C" opacity="1">
+          <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.72;1" dur="1.2s" begin="0s" fill="freeze"/>
           <text x="56" y="328">ai-agents/</text>
           <text x="284" y="328">mcp-servers/</text>
           <text x="512" y="328">llm-research/</text>
           <text x="740" y="328">cuda-kernels/</text>
           <text x="968" y="328">firmware/</text>
         </g>
-        <g fill="#127A52" opacity="0">
-          <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.2s" fill="freeze"/>
+        <g fill="#127A52" opacity="1">
+          <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.78;1" dur="1.55s" begin="0s" fill="freeze"/>
           <text x="56" y="360">games/</text>
           <text x="284" y="360">3d-realtime/</text>
           <text x="512" y="360">vpn-and-infra/</text>
@@ -70,8 +70,8 @@
         </g>
       </g>
 
-      <g opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.7s" fill="freeze"/>
+      <g opacity="1">
+        <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.83;1" dur="2.05s" begin="0s" fill="freeze"/>
         <text x="40" y="400">
           <tspan fill="#127A52">pascal@igd</tspan><tspan fill="#566B87">:</tspan><tspan fill="#0E7FA8">~</tspan><tspan fill="#566B87">$ </tspan><tspan fill="#566B87" font-style="italic"># yes, all of it. the receipts are below.</tspan>
         </text>
