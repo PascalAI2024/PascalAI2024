@@ -14,9 +14,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/header-dark.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/header-light.svg?v=2">
-    <img alt="PascalAI / Ingenious Digital — websites, shopify, wordpress, CRM, automations, AI agents, MCP servers, LLM research, CUDA kernels, firmware, games, 3D real-time, VPN and infra, data pipelines, lead gen" src="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/header-dark.svg?v=2" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/header-dark-v2.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/header-light-v2.svg">
+    <img alt="PascalAI / Ingenious Digital — websites, shopify, wordpress, CRM, automations, AI agents, MCP servers, LLM research, CUDA kernels, firmware, games, 3D real-time, VPN and infra, data pipelines, lead gen" src="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/header-dark-v2.svg" width="100%">
   </picture>
 </p>
 
