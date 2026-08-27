@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Maple CUDA measured throughput. Generation went from 52 to 377 tokens per second, 7.2 times. Prompt processing went from 1,457 to 10,674 tokens per second, 7.3 times.">
+  <title>Maple CUDA — measured throughput, before and after</title>
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0E7FA8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0E7FA8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="380" rx="12" fill="#F5F8FC"/>
+  <rect x="0.5" y="0.5" width="1199" height="379" rx="12" fill="none" stroke="#D3DEEC"/>
+
+  <text x="40" y="52" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif"
+        font-size="22" font-weight="600" fill="#0B1B2E">Maple CUDA — measured throughput</text>
+  <text x="40" y="78" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace"
+        font-size="13" letter-spacing="1.5" fill="#566B87">20B-A1B TERNARY MoE · 7.3 GB · 16 GB CONSUMER CARD · WINDOWS</text>
+
+  <line x1="600" y1="112" x2="600" y2="330" stroke="#D3DEEC"/>
+
+  <!-- panel A: generation -->
+  <text x="40" y="140" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace"
+        font-size="13" letter-spacing="2" fill="#0E7FA8">GENERATION</text>
+
+  <text x="40" y="184" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="13" fill="#566B87">before</text>
+  <rect x="112" y="166" width="41" height="26" rx="4" fill="#C2CEDE"/>
+  <text x="165" y="185" font-family="'Segoe UI',Inter,Arial,sans-serif" font-size="17" font-weight="600" fill="#566B87">52</text>
+
+  <text x="40" y="240" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="13" fill="#566B87">after</text>
+  <rect x="112" y="216" width="300" height="34" rx="4" fill="url(#bar)"/>
+  <text x="424" y="242" font-family="'Segoe UI',Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#0B1B2E">377</text>
+
+  <text x="40" y="298" font-family="'Segoe UI',Inter,Arial,sans-serif" font-size="16" fill="#566B87">tokens/sec · <tspan fill="#A96C0C" font-weight="600">7.2×</tspan></text>
+
+  <!-- panel B: prompt processing -->
+  <text x="648" y="140" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace"
+        font-size="13" letter-spacing="2" fill="#0E7FA8">PROMPT PROCESSING</text>
+
+  <text x="648" y="184" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="13" fill="#566B87">before</text>
+  <rect x="720" y="166" width="41" height="26" rx="4" fill="#C2CEDE"/>
+  <text x="773" y="185" font-family="'Segoe UI',Inter,Arial,sans-serif" font-size="17" font-weight="600" fill="#566B87">1,457</text>
+
+  <text x="648" y="240" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="13" fill="#566B87">after</text>
+  <rect x="720" y="216" width="300" height="34" rx="4" fill="url(#bar)"/>
+  <text x="1032" y="242" font-family="'Segoe UI',Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#0B1B2E">10,674</text>
+
+  <text x="648" y="298" font-family="'Segoe UI',Inter,Arial,sans-serif" font-size="16" fill="#566B87">tokens/sec · <tspan fill="#A96C0C" font-weight="600">7.3×</tspan></text>
+
+  <line x1="40" y1="330" x2="1160" y2="330" stroke="#D3DEEC"/>
+  <text x="40" y="358" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="12.5" fill="#566B87">103/103 CPU-REFERENCE CASES PASSED ON EVERY ENABLED BUILD</text>
+  <text x="1160" y="358" text-anchor="end" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="12.5" fill="#566B87">FRESH A/B/B/A RUN</text>
+</svg>

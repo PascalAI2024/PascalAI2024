@@ -100,20 +100,20 @@ deterministic combat and orbital mechanics.
 
 <table>
 <tr><td><b>Client web<br/>& commerce</b></td><td>
-<img src="https://skillicons.dev/icons?i=wordpress,php,js,ts,react,nextjs,tailwind,vite&theme=dark" alt="WordPress, PHP, JavaScript, TypeScript, React, Next.js, Tailwind, Vite">
-<a href="https://shop.healthyglowaesthetics.com"><img src="https://img.shields.io/badge/Shopify-7AB55C?style=for-the-badge&logo=shopify&logoColor=white" alt="Shopify" height="42"></a>
+<img src="https://skillicons.dev/icons?i=wordpress,php,js,ts,react,nextjs,tailwind,vite&theme=dark" alt="WordPress, PHP, JavaScript, TypeScript, React, Next.js, Tailwind, Vite" height="48">
+<a href="https://shop.healthyglowaesthetics.com"><img src="https://img.shields.io/badge/Shopify-7AB55C?style=for-the-badge&logo=shopify&logoColor=white" alt="Shopify" height="48"></a>
 </td></tr>
 <tr><td><b>Backend<br/>& data</b></td><td>
-<img src="https://skillicons.dev/icons?i=nodejs,bun,nestjs,elixir,python,fastapi,postgres,prisma&theme=dark" alt="Node.js, Bun, NestJS, Elixir, Python, FastAPI, PostgreSQL, Prisma">
+<img src="https://skillicons.dev/icons?i=nodejs,bun,nestjs,elixir,python,fastapi,postgres,prisma&theme=dark" alt="Node.js, Bun, NestJS, Elixir, Python, FastAPI, PostgreSQL, Prisma" height="48">
 </td></tr>
 <tr><td><b>Systems<br/>& embedded</b></td><td>
-<img src="https://skillicons.dev/icons?i=rust,go,zig,c,cpp,arduino&theme=dark" alt="Rust, Go, Zig, C, C++, embedded">
+<img src="https://skillicons.dev/icons?i=rust,go,zig,c,cpp,arduino&theme=dark" alt="Rust, Go, Zig, C, C++, embedded" height="48">
 </td></tr>
 <tr><td><b>Apps, 3D<br/>& games</b></td><td>
-<img src="https://skillicons.dev/icons?i=flutter,dart,threejs,blender,godot&theme=dark" alt="Flutter, Dart, Three.js, Blender, Godot">
+<img src="https://skillicons.dev/icons?i=flutter,dart,threejs,blender,godot&theme=dark" alt="Flutter, Dart, Three.js, Blender, Godot" height="48">
 </td></tr>
 <tr><td><b>Infra<br/>& tooling</b></td><td>
-<img src="https://skillicons.dev/icons?i=docker,nginx,cloudflare,linux,bash,powershell,git,github&theme=dark" alt="Docker, nginx, Cloudflare, Linux, Bash, PowerShell, Git, GitHub">
+<img src="https://skillicons.dev/icons?i=docker,nginx,cloudflare,linux,bash,powershell,git,github&theme=dark" alt="Docker, nginx, Cloudflare, Linux, Bash, PowerShell, Git, GitHub" height="48">
 </td></tr>
 </table>
 
@@ -175,6 +175,14 @@ bridge.
 </tr>
 </table>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-light.svg">
+    <img alt="Maple CUDA measured throughput: generation 52 to 377 tokens per second (7.2x), prompt processing 1,457 to 10,674 tokens per second (7.3x), 103 of 103 CPU-reference cases passed" src="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-dark.svg" width="100%">
+  </picture>
+</p>
+
 | Project | Lane | Status |
 | :-- | :-- | :-- |
 | [fplbench](https://github.com/PascalAI2024/fplbench) | Applied ML / data | Live 2026/27 benchmark |
@@ -196,19 +204,74 @@ bridge.
 
 ## In-house
 
-The studio runs on tooling built for itself. Source-private.
+The studio runs on tooling built for itself. Source-private, so what follows is
+the shape and the scale — not the machinery.
 
-| | |
-| :-- | :-- |
-| **JarvisMCP** | One Code-Mode MCP gateway replacing dozens of individual MCP servers with two tools, exposing a company's operations surface to agents under scoped access |
-| **Overwatch** | The operations console — Bun, TanStack Start, PostgreSQL, Drizzle |
-| **GigaBrain** | A reusable knowledge-vault template: agent-pointable operating memory, shipped with structure and no data |
-| **Sandbox fleet** | Self-hosted disposable environments for agent work |
+### JarvisMCP — one gateway, two tools
 
-Client data, credentials, production topology, security controls, internal
-prompts and access paths stay out of public repositories — the
-[boundaries](https://github.com/PascalAI2024/portfolio/blob/main/PUBLIC_BOUNDARIES.md)
-are written down.
+Most agent setups bolt on an MCP server per integration and drown the model in
+tool definitions before it does any work. This inverts it. The agent gets **two**
+tools — search and execute — writes JavaScript against them, and the catalogue
+stays server-side.
+
+<table>
+<tr>
+<td align="center"><b>2</b><br/><sub>tools exposed</sub></td>
+<td align="center"><b>60</b><br/><sub>services</sub></td>
+<td align="center"><b>494</b><br/><sub>discoverable methods</sub></td>
+<td align="center"><b>~500</b><br/><sub>tokens per session</sub></td>
+<td align="center"><b>1,100+</b><br/><sub>tests</sub></td>
+</tr>
+</table>
+
+Capability lookup happens before execution. Agent-authored code runs in a
+sandboxed isolate holding no credentials, and the services that do hold them sit
+outside that boundary. Failed calls come back with a correction rather than a
+stack trace, and long-running work survives restarts on a coordination board
+with leases and checkpoints.
+
+```mermaid
+flowchart LR
+    A["Coding agent"] -->|"1 · search"| C["Capability catalogue<br/>60 services · 494 methods"]
+    C -.->|"method signature"| A
+    A -->|"2 · execute JS"| S["Sandboxed isolate<br/>no credentials"]
+    S -->|"bounded call"| G["Gateway"]
+    G --> V["Credential-holding services"]
+    V --> G
+    G --> S
+    S -->|"result, or a correction"| A
+    H["Person"] -->|"approves write-class actions"| G
+```
+
+### Overwatch — search intelligence as one working surface
+
+Rank tracking, search performance, local visibility and AI-era search signals in
+a single self-hosted project view, instead of five specialist dashboards.
+Background jobs keep the picture current; the assistant proposes actions and a
+human approves them. `Bun` · `TanStack Start` · `PostgreSQL` · `Drizzle`
+
+### ButlerCRM — follow-up that doesn't get dropped
+
+AI-first CRM for revenue teams, running live at
+[butlercrm.com](https://butlercrm.com). `Elixir` · `Phoenix LiveView` ·
+`PostgreSQL`
+
+### GigaBrain — operating memory you can point an agent at
+
+A knowledge-vault template that ships with structure and **no data** — nothing
+project-, client- or person-specific. Point an agent at a copy and it learns the
+project's architecture, positioning and history as you fill it in, then keeps it
+maintained.
+
+### Sandbox fleet
+
+Self-hosted disposable environments so agents can run real work — installs,
+builds, migrations — without touching anything that matters.
+
+> Client data, credentials, production topology, security controls, internal
+> prompts, service addresses and access paths stay out of public repositories.
+> The [boundaries](https://github.com/PascalAI2024/portfolio/blob/main/PUBLIC_BOUNDARIES.md)
+> are written down, so the line doesn't get decided case by case.
 
 ---
 
