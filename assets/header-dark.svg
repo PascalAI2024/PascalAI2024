@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-label="PascalAI — systems that ship, claims that can be checked">
+  <title>PascalAI — Systems that ship. Claims that can be checked.</title>
+  <defs>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08111F"/>
+      <stop offset="55%" stop-color="#0D1B2E"/>
+      <stop offset="100%" stop-color="#08111F"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#47D7FF" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#47D7FF" stop-opacity="0.16"/>
+      <stop offset="55%" stop-color="#47D7FF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#47D7FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="trace" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#47D7FF" stop-opacity="0"/>
+      <stop offset="34%" stop-color="#47D7FF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#47D7FF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#47D7FF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#47D7FF" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="edgefade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#08111F" stop-opacity="1"/>
+      <stop offset="10%" stop-color="#08111F" stop-opacity="0"/>
+      <stop offset="90%" stop-color="#08111F" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#08111F" stop-opacity="1"/>
+    </linearGradient>
+    <clipPath id="frame"><rect x="0" y="0" width="1280" height="360" rx="14"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="360" fill="url(#field)"/>
+
+    <g stroke="#1A2C45" stroke-width="1" opacity="0.7">
+      <path d="M0 60h1280M0 120h1280M0 180h1280M0 240h1280M0 300h1280"/>
+      <path d="M80 0v360M240 0v360M400 0v360M560 0v360M720 0v360M880 0v360M1040 0v360M1200 0v360"/>
+    </g>
+
+    <path d="M660 236 L730 214 L790 220 L860 186 L930 192 L1000 152 L1070 158 L1140 112 L1210 118 L1280 72 L1345 64 L1345 360 L660 360 Z"
+          fill="url(#wash)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="1.6s" begin="2.4s" fill="freeze"/>
+    </path>
+
+    <path d="M660 236 L730 214 L790 220 L860 186 L930 192 L1000 152 L1070 158 L1140 112 L1210 118 L1280 72 L1345 64"
+          fill="none" stroke="url(#trace)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"
+          stroke-dasharray="760" stroke-dashoffset="760">
+      <animate attributeName="stroke-dashoffset" from="760" to="0" dur="2.8s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
+    </path>
+
+    <g fill="#08111F" stroke="#F2B84B" stroke-width="2.5">
+      <circle cx="860" cy="186" r="5.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/></circle>
+      <circle cx="1070" cy="158" r="5.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.0s" fill="freeze"/></circle>
+      <circle cx="1280" cy="72"  r="5.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.7s" fill="freeze"/></circle>
+    </g>
+    <g fill="#F2B84B" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.9s" fill="freeze"/>
+      <circle cx="1280" cy="72" r="5.5">
+        <animate attributeName="r" values="5.5;16;5.5" dur="2.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0;0.5" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <rect x="-420" y="0" width="420" height="360" fill="url(#sweep)">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="1700 0" dur="7s" begin="3.2s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect width="1280" height="360" fill="url(#edgefade)" opacity="0.92"/>
+
+    <g font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="14" letter-spacing="4.5">
+      <text x="72" y="92" fill="#47D7FF" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace">INGENIOUS DIGITAL</text>
+      <text x="316" y="92" fill="#6F829C" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace">/  PUBLIC ENGINEERING RECORD</text>
+    </g>
+
+    <text x="70" y="182" font-family="'Segoe UI','Segoe UI Semibold',Inter,'Helvetica Neue',Arial,sans-serif"
+          font-size="82" font-weight="700" letter-spacing="-2" fill="#D9E5F5">Pascal<tspan fill="#47D7FF">AI</tspan></text>
+    <text x="74" y="228" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif"
+          font-size="26" font-weight="600" fill="#D9E5F5" opacity="0.9">Systems that ship. Claims that can be checked.</text>
+    <text x="74" y="262" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif"
+          font-size="17" font-weight="400" fill="#6F829C">Agent systems · applied ML · GPU performance · native tools · embedded AI</text>
+
+    <g font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="13" letter-spacing="1.6">
+      <g fill="none" stroke="#1A2C45">
+        <rect x="72"  y="292" width="184" height="34" rx="17"/>
+        <rect x="268" y="292" width="176" height="34" rx="17"/>
+        <rect x="456" y="292" width="212" height="34" rx="17"/>
+        <rect x="680" y="292" width="168" height="34" rx="17"/>
+      </g>
+      <g fill="#6F829C" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace">
+        <text x="94"  y="314">FROZEN FORECASTS</text>
+        <text x="290" y="314">103/103 PASSING</text>
+        <text x="478" y="314">52 → 377 TOK/S CUDA</text>
+        <text x="702" y="314">SHIPPED ALPHA</text>
+      </g>
+      <g fill="#F2B84B">
+        <circle cx="84"  cy="309" r="3"/><circle cx="280" cy="309" r="3"/>
+        <circle cx="468" cy="309" r="3"/><circle cx="692" cy="309" r="3"/>
+      </g>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="359" rx="14" fill="none" stroke="#1A2C45"/>
+</svg>
