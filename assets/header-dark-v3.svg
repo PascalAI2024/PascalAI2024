@@ -45,7 +45,6 @@
 
       <g font-size="15.5">
         <g fill="#47D7FF" opacity="1">
-          <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="0.85s" begin="0s" fill="freeze"/>
           <text x="56" y="296">websites/</text>
           <text x="284" y="296">shopify/</text>
           <text x="512" y="296">wordpress/</text>
@@ -53,7 +52,6 @@
           <text x="968" y="296">automations/</text>
         </g>
         <g fill="#F2B84B" opacity="1">
-          <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.72;1" dur="1.2s" begin="0s" fill="freeze"/>
           <text x="56" y="328">ai-agents/</text>
           <text x="284" y="328">mcp-servers/</text>
           <text x="512" y="328">llm-research/</text>
@@ -61,7 +59,6 @@
           <text x="968" y="328">firmware/</text>
         </g>
         <g fill="#3FCF8E" opacity="1">
-          <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.78;1" dur="1.55s" begin="0s" fill="freeze"/>
           <text x="56" y="360">games/</text>
           <text x="284" y="360">3d-realtime/</text>
           <text x="512" y="360">vpn-and-infra/</text>
@@ -71,7 +68,6 @@
       </g>
 
       <g opacity="1">
-        <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.83;1" dur="2.05s" begin="0s" fill="freeze"/>
         <text x="40" y="400">
           <tspan fill="#3FCF8E">pascal@igd</tspan><tspan fill="#6F829C">:</tspan><tspan fill="#47D7FF">~</tspan><tspan fill="#6F829C">$ </tspan><tspan fill="#6F829C" font-style="italic"># yes, all of it. the receipts are below.</tspan>
         </text>
