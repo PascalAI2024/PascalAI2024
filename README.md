@@ -232,13 +232,13 @@ with leases and checkpoints.
 
 ```mermaid
 flowchart TB
-    A["Coding agent"] -->|"1 · search"| C["Capability catalogue<br/>60 services · 494 methods"]
-    C -.->|"method signature"| A
-    A -->|"2 · execute JS"| S["Sandboxed isolate<br/>no credentials"]
+    A["Coding agent"] -->|"1 search"| C["Capability catalogue<br/>60 services · 494 methods"]
+    C -.->|"signature"| A
+    A -->|"2 execute"| S["Sandboxed isolate<br/>no credentials"]
     S -->|"bounded call"| G["Gateway"]
     G <--> V["Credential-holding services"]
-    S -->|"result, or a correction"| A
-    H["Person"] -->|"approves write-class actions"| G
+    S -->|"result"| A
+    H["Person"] -->|"approves writes"| G
 ```
 
 ### Overwatch — search intelligence as one working surface
