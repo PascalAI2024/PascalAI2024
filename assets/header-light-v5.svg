@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 230" width="1280" height="230" role="img" aria-labelledby="title desc">
+  <title id="title">PascalAI / Ingenious Digital</title>
+  <desc id="desc">Agent infrastructure, open-source systems, and software for businesses. Fort Lauderdale.</desc>
+  <rect x="1" y="1" width="1278" height="228" rx="14" fill="#F4F8FC" stroke="#D0DCE8"/>
+  <g font-family="'Segoe UI',Arial,sans-serif">
+    <text x="48" y="45" font-size="16" letter-spacing="3" fill="#52657D">INGENIOUS DIGITAL / FORT LAUDERDALE</text>
+    <text x="44" y="124" font-size="68" font-weight="700" letter-spacing="-2" fill="#172D45">Pascal<tspan fill="#00749B">AI</tspan></text>
+    <text x="48" y="169" font-size="25" fill="#172D45">Agent infrastructure. Open-source systems. Software for businesses.</text>
+    <text x="48" y="207" font-size="17" fill="#52657D">From a coding agent’s tools to the device on your desk.</text>
+  </g>
+  <path d="M1154 63 L1182 88 L1154 113 M1200 114 H1230" fill="none" stroke="#00749B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
