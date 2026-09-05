@@ -43,13 +43,135 @@ infrastructure, which is where most of this GitHub comes from.
 
 ---
 
+## JarvisMCP — one gateway, two tools
+
+**Flagship infrastructure for the studio. Closed-source.**
+
+Most agent setups bolt on an MCP server per integration and drown the model in
+tool definitions before it does any work. This inverts it. The agent gets **two**
+tools — search and execute — writes JavaScript against them, and the catalogue
+stays server-side.
+
+<table>
+<tr>
+<td align="center"><b>2</b><br/><sub>tools exposed</sub></td>
+<td align="center"><b>Search</b><br/><sub>discover capabilities</sub></td>
+<td align="center"><b>Execute</b><br/><sub>compose work</sub></td>
+<td align="center"><b>Leases</b><br/><sub>coordinate ownership</sub></td>
+<td align="center"><b>Checkpoints</b><br/><sub>resume work</sub></td>
+</tr>
+</table>
+
+Capability lookup happens before execution. Agent-authored code runs in a
+sandboxed isolate holding no credentials, and the services that do hold them sit
+outside that boundary. A durable coordination board keeps ownership,
+leases, checkpoints and evidence attached to the work across agents, sessions
+and computers. The public firmware project, JarvisNano, is separate from this
+private gateway.
+
+```mermaid
+flowchart TB
+    A["Coding agent"] -->|"1 search"| C["Capability catalogue<br/>Discoverable services"]
+    C -.->|"signature"| A
+    A -->|"2 execute"| S["Sandboxed isolate<br/>no credentials"]
+    S -->|"bounded call"| G["Gateway"]
+    G <--> V["Credential-holding services"]
+    S -->|"result"| A
+    H["Person"] -->|"approves writes"| G
+```
+
+[Public architecture story](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/jarvismcp.md) · Source and operational details remain private.
+
+---
+
+## Open source
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧪 [fplbench](https://github.com/PascalAI2024/fplbench)
+
+A leakage-aware Fantasy Premier League dataset and forecasting system. The
+forecast is committed before the deadline, the model plays its own public team,
+and automation grades the frozen forecast after verified gameweek results.
+
+`Python` · MIT code; separate data terms · [dataset](https://huggingface.co/datasets/x0me/fplbench) · [live board](https://huggingface.co/spaces/x0me/fplbench-board)
+
+</td>
+<td width="50%" valign="top">
+
+### ⚡ [Maple CUDA](https://github.com/PascalAI2024/maple-preview-windows-cuda)
+
+Seven local CUDA patches that made a 20B‑A1B ternary model practical on a 16 GB
+GPU under Windows. Generation 52 → 377 tok/s, prompt processing 1,457 → 10,674
+tok/s, against a 103-case CPU-reference matrix. These published experiments
+are hardware- and revision-specific; the original generation run and later
+prompt-processing reproduction are documented separately.
+
+`CUDA` · [benchmarks](https://huggingface.co/datasets/x0me/maple-preview-cuda-benchmarks) · [case study](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/maple-cuda.md)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🐚 [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag)
+
+An all-Zig shell workspace: a readable shell core, native Windows and macOS
+terminal hosts, a cross-platform launcher, and a local AI sidecar. The agent
+proposes mutations; the host owns the approval.
+
+`Zig` · [releases](https://github.com/PascalAI2024/ZiggyZag/releases)
+
+</td>
+<td width="50%" valign="top">
+
+### 🤖 [JarvisNano](https://github.com/PascalAI2024/JarvisNano)
+
+ESP32-S3 firmware for the Waveshare Touch AMOLED 1.75C desk companion: round
+display, touch, live voice, device diagnostics, and a guarded tool bridge.
+Public firmware, with hardware release gates still in progress.
+
+`C` · `ESP-IDF` · [architecture](https://github.com/PascalAI2024/JarvisNano/blob/main/docs/ARCHITECTURE.md)
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-light.svg">
+    <img alt="Maple CUDA measured throughput: generation 52 to 377 tokens per second (7.2x), prompt processing 1,457 to 10,674 tokens per second (7.3x), 103 of 103 CPU-reference cases passed" src="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-dark.svg" width="100%">
+  </picture>
+</p>
+
+| Project | Lane | Status |
+| :-- | :-- | :-- |
+| [fplbench](https://github.com/PascalAI2024/fplbench) | Applied ML / data | Live 2026/27 benchmark |
+| [Maple CUDA](https://github.com/PascalAI2024/maple-preview-windows-cuda) | GPU performance | v1.0 release + post-release MMQ research |
+| [Qwen Quant Bench](https://github.com/PascalAI2024/qwen38-27b-quant-bench) | LLM research | Completed research record |
+| [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag) | Native dev tools | Active alpha |
+| [JarvisNano](https://github.com/PascalAI2024/JarvisNano) | Embedded AI | Hardware release candidate |
+| [PicoArmy](https://github.com/PascalAI2024/picoarmy) | Agent fleets | Public prototype, no deployment |
+| [Verrow](https://github.com/PascalAI2024/verrow) | Data operations | Public prototype |
+| [KinTunnel](https://github.com/PascalAI2024/kintunnel) | Self-hosted networking | Runnable MVP, dry-run default |
+
+[Case studies](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/README.md) ·
+[capability map](https://github.com/PascalAI2024/portfolio/blob/main/capabilities/README.md) ·
+[system shapes](https://github.com/PascalAI2024/portfolio/blob/main/architecture/README.md) ·
+[evidence ledger](https://github.com/PascalAI2024/portfolio/blob/main/proof/README.md)
+
+---
+
 ## Client work
 
 Live sites, built and maintained by the shop.
 
 | Site | What we built | Stack |
 | :-- | :-- | :-- |
-| **[Healthy Glow Aesthetics](https://healthyglowaesthetics.com)** | Med spa site and local SEO — ranks on "Fort Lauderdale med spa" search intent | WordPress · SEO |
+| **[Healthy Glow Aesthetics](https://healthyglowaesthetics.com)** | Med spa site and local SEO — treatment discovery and booking | WordPress · SEO |
 | **[Healthy Glow Shop](https://shop.healthyglowaesthetics.com)** | Product storefront, custom theme and merchandising | Shopify |
 | **[The Fort Lauderdale MedSpa](https://thefortlauderdalemedspa.com)** | Practice site for injectables and skincare, built around booking intent | WordPress · SEO |
 | **[Ingenious Digital](https://ingeniousdigital.com)** | The studio's own site — React, TypeScript, 3D, voice assistant, CRM automation | React · TS |
@@ -62,7 +184,7 @@ and post-launch maintenance. Service breakdown at
 
 ## Products
 
-Built by the studio, live in production.
+Selected studio products. Availability and release maturity vary by project.
 
 | | | |
 | :-- | :-- | :-- |
@@ -71,10 +193,9 @@ Built by the studio, live in production.
 | **[NexusDialer](https://nexusdialer.com)** | Enterprise contact center with BYOS | Full-stack TS |
 | **[TraceKill](https://tracekill.com)** | Data-broker exposure scanning | Full-stack TS |
 | **[PolyHuntr](https://polyhuntr.com)** | Copy trading, gated on the math | Full-stack TS |
-| **[VibeGotchi](https://vibegotchi.pages.dev)** | GitHub-powered virtual pet, read-only OAuth | [open source](https://github.com/PascalAI2024/VibeGotchi) |
 
 More out of [IGD Dev Lab](https://igddev.com): **Oxide Studio** (AI dev
-environment driving 700+ models), **Juba** (investigative dossier builder with a
+environment with multi-model support), **Juba** (investigative dossier builder with a
 force-directed knowledge graph), **ZeroChat** (on-device voice agent),
 **DataAlchemy**, **TariffSync**, **VocalFrame**, **ZeroInbox**, **CallCue**,
 **HVAC Recruit**, **HerCircle**, and a real-time space strategy game with
@@ -122,124 +243,10 @@ have icons but do have production hours.
 
 ---
 
-## Open source
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🧪 [fplbench](https://github.com/PascalAI2024/fplbench)
-
-A leakage-safe Fantasy Premier League dataset and forecasting system. The
-forecast is committed before the deadline, the model plays its own public team,
-and automation grades the frozen forecast after the gameweek.
-
-`Python` · [dataset](https://huggingface.co/datasets/x0me/fplbench) · [live board](https://huggingface.co/spaces/x0me/fplbench-board)
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ [Maple CUDA](https://github.com/PascalAI2024/maple-preview-windows-cuda)
-
-Seven local CUDA patches that made a 20B‑A1B ternary model practical on a 16 GB
-GPU under Windows. Generation 52 → 377 tok/s, prompt processing 1,457 → 10,674
-tok/s, against a 103-case CPU-reference matrix.
-
-`CUDA` · [benchmarks](https://huggingface.co/datasets/x0me/maple-preview-cuda-benchmarks) · [case study](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/maple-cuda.md)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🐚 [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag)
-
-An all-Zig shell workspace: a readable shell core, native Windows and macOS
-terminal hosts, a cross-platform launcher, and a local AI sidecar. The agent
-proposes mutations; the host owns the approval.
-
-`Zig` · [releases](https://github.com/PascalAI2024/ZiggyZag/releases)
-
-</td>
-<td width="50%" valign="top">
-
-### 🤖 [JarvisNano](https://github.com/PascalAI2024/JarvisNano)
-
-ESP32-S3 firmware for a pocket desktop assistant: round AMOLED display, touch,
-microphone and speaker paths, live voice, device diagnostics, and a guarded tool
-bridge.
-
-`C` · `ESP-IDF` · [architecture](https://github.com/PascalAI2024/JarvisNano/blob/main/docs/ARCHITECTURE.md)
-
-</td>
-</tr>
-</table>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-light.svg">
-    <img alt="Maple CUDA measured throughput: generation 52 to 377 tokens per second (7.2x), prompt processing 1,457 to 10,674 tokens per second (7.3x), 103 of 103 CPU-reference cases passed" src="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-dark.svg" width="100%">
-  </picture>
-</p>
-
-| Project | Lane | Status |
-| :-- | :-- | :-- |
-| [fplbench](https://github.com/PascalAI2024/fplbench) | Applied ML / data | Live 2026/27 benchmark |
-| [Maple CUDA](https://github.com/PascalAI2024/maple-preview-windows-cuda) | GPU performance | v1.0 release + post-release MMQ research |
-| [Qwen Quant Bench](https://github.com/PascalAI2024/qwen38-27b-quant-bench) | LLM research | Completed research record |
-| [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag) | Native dev tools | Active alpha |
-| [JarvisNano](https://github.com/PascalAI2024/JarvisNano) | Embedded AI | Hardware release candidate |
-| [PicoArmy](https://github.com/PascalAI2024/picoarmy) | Agent fleets | Public prototype, no deployment |
-| [Verrow](https://github.com/PascalAI2024/verrow) | Data operations | Public prototype |
-| [KinTunnel](https://github.com/PascalAI2024/kintunnel) | Self-hosted networking | Runnable MVP, dry-run default |
-| [PAL](https://github.com/PascalAI2024/pal-lang) | Language research | Early concept |
-
-[Case studies](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/README.md) ·
-[capability map](https://github.com/PascalAI2024/portfolio/blob/main/capabilities/README.md) ·
-[system shapes](https://github.com/PascalAI2024/portfolio/blob/main/architecture/README.md) ·
-[evidence ledger](https://github.com/PascalAI2024/portfolio/blob/main/proof/README.md)
-
----
-
 ## In-house
 
 The studio runs on tooling built for itself. Source-private, so what follows is
-the shape and the scale — not the machinery.
-
-### JarvisMCP — one gateway, two tools
-
-Most agent setups bolt on an MCP server per integration and drown the model in
-tool definitions before it does any work. This inverts it. The agent gets **two**
-tools — search and execute — writes JavaScript against them, and the catalogue
-stays server-side.
-
-<table>
-<tr>
-<td align="center"><b>2</b><br/><sub>tools exposed</sub></td>
-<td align="center"><b>60</b><br/><sub>services</sub></td>
-<td align="center"><b>494</b><br/><sub>discoverable methods</sub></td>
-<td align="center"><b>~500</b><br/><sub>tokens per session</sub></td>
-<td align="center"><b>1,100+</b><br/><sub>tests</sub></td>
-</tr>
-</table>
-
-Capability lookup happens before execution. Agent-authored code runs in a
-sandboxed isolate holding no credentials, and the services that do hold them sit
-outside that boundary. Failed calls come back with a correction rather than a
-stack trace, and long-running work survives restarts on a coordination board
-with leases and checkpoints.
-
-```mermaid
-flowchart TB
-    A["Coding agent"] -->|"1 search"| C["Capability catalogue<br/>60 services · 494 methods"]
-    C -.->|"signature"| A
-    A -->|"2 execute"| S["Sandboxed isolate<br/>no credentials"]
-    S -->|"bounded call"| G["Gateway"]
-    G <--> V["Credential-holding services"]
-    S -->|"result"| A
-    H["Person"] -->|"approves writes"| G
-```
+the system shape — not the machinery.
 
 ### Overwatch — search intelligence as one working surface
 
@@ -261,6 +268,9 @@ project-, client- or person-specific. Point an agent at a copy and it learns the
 project's architecture, positioning and history as you fill it in, then keeps it
 maintained.
 
+Also public: [PAL](https://github.com/PascalAI2024/pal-lang), an early language
+research project with no declared repository license.
+
 ### Sandbox fleet
 
 Self-hosted disposable environments so agents can run real work — installs,
@@ -278,7 +288,7 @@ builds, migrations — without touching anything that matters.
 - Half my infrastructure is named after a fictional butler.
 - A Shopify theme, a Roblox scene and a CUDA kernel can land in the same week of commits.
 - The stack runs from `Shopify Liquid` to `ESP-IDF`. Nobody planned that.
-- `~/dev` holds about ninety projects. These are the ones that made it out.
+- The public portfolio is a selected view of the work, with evidence and project boundaries.
 
 ---
 
