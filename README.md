@@ -189,6 +189,7 @@ Selected studio products. Availability and release maturity vary by project.
 | | | |
 | :-- | :-- | :-- |
 | **[ButlerCRM](https://butlercrm.com)** | AI-first CRM for revenue teams | Elixir · Phoenix LiveView |
+| **[IGD Games](https://games.igddev.com)** | Playable browser-game lab — circuit puzzles, ant colonies, folklore and tactical prototypes | TypeScript · Phaser · PixiJS · HTML5 |
 | **[GlowClient](https://glowclient.com)** | Practice management for medical aesthetics — booking, payments, clients | Full-stack TS |
 | **[NexusDialer](https://nexusdialer.com)** | Enterprise contact center with BYOS | Full-stack TS |
 | **[TraceKill](https://tracekill.com)** | Data-broker exposure scanning | Full-stack TS |
@@ -200,6 +201,11 @@ force-directed knowledge graph), **ZeroChat** (on-device voice agent),
 **DataAlchemy**, **TariffSync**, **VocalFrame**, **ZeroInbox**, **CallCue**,
 **HVAC Recruit**, **HerCircle**, and a real-time space strategy game with
 deterministic combat and orbital mechanics.
+
+**Play the game lab:** [IGD Games](https://games.igddev.com) brings together
+**Gizmo Works**, **SubTerra Lite**, **Papardes Zieds**, and other playable
+experiments. Builds range from early prototypes to launch candidates; the source
+repository is private. [Read the project story](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/igd-games.md).
 
 ---
 
