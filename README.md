@@ -182,6 +182,8 @@ Live sites, built and maintained by the shop.
 [Ladie One: the delivered website, desktop and mobile gallery](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/ladie-one.md).
 Website design and development by Ingenious Digital; artwork and artist collaborations belong to Ladie One.
 
+[Healthy Glow Shopify: collections, product detail and mobile shopping](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/healthy-glow-shopify.md).
+
 Also: digital marketing, ad management, lead generation, GA4 and CRM wiring,
 and post-launch maintenance. Service breakdown at
 [ingeniousdigital.com/services](https://ingeniousdigital.com/services).
@@ -273,6 +275,8 @@ human approves them. `Bun` · `TanStack Start` · `PostgreSQL` · `Drizzle`
 AI-first CRM for revenue teams, running live at
 [butlercrm.com](https://butlercrm.com). `Elixir` · `Phoenix LiveView` ·
 `PostgreSQL`
+
+[Inside ButlerCRM: actual customer, pipeline and delivery workflows](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/butlercrm.md), shown with fictional demonstration records.
 
 ### GigaBrain — operating memory you can point an agent at
 
