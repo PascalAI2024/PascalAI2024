@@ -171,10 +171,16 @@ Live sites, built and maintained by the shop.
 
 | Site | What we built | Stack |
 | :-- | :-- | :-- |
+| **[Ladie One](https://ladieone.com)** | Artist portfolio — editorial mural showcase, categorized galleries and responsive artist story | Next.js · React · TypeScript |
 | **[Healthy Glow Aesthetics](https://healthyglowaesthetics.com)** | Med spa site and local SEO — treatment discovery and booking | WordPress · SEO |
 | **[Healthy Glow Shop](https://shop.healthyglowaesthetics.com)** | Product storefront, custom theme and merchandising | Shopify |
 | **[The Fort Lauderdale MedSpa](https://thefortlauderdalemedspa.com)** | Practice site for injectables and skincare, built around booking intent | WordPress · SEO |
 | **[Ingenious Digital](https://ingeniousdigital.com)** | The studio's own site — React, TypeScript, 3D, voice assistant, CRM automation | React · TS |
+
+<a href="https://github.com/PascalAI2024/portfolio/blob/main/case-studies/ladie-one.md"><img src="https://raw.githubusercontent.com/PascalAI2024/portfolio/main/assets/ladie-one/ladie-one-featured-landscape-v3.png" alt="Ladie One artist website: actual six-project mural showcase designed and developed by Ingenious Digital" width="820"></a>
+
+[Ladie One: the delivered website, desktop and mobile gallery](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/ladie-one.md).
+Website design and development by Ingenious Digital; artwork and artist collaborations belong to Ladie One.
 
 Also: digital marketing, ad management, lead generation, GA4 and CRM wiring,
 and post-launch maintenance. Service breakdown at
@@ -189,6 +195,7 @@ Selected studio products. Availability and release maturity vary by project.
 | | | |
 | :-- | :-- | :-- |
 | **[ButlerCRM](https://butlercrm.com)** | AI-first CRM for revenue teams | Elixir · Phoenix LiveView |
+| **[Overwatch](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/overwatch.md)** | Search and analytics operations — reporting, site workflows and agent integrations | TypeScript · React |
 | **[IGD Games](https://games.igddev.com)** | Playable browser-game lab — circuit puzzles, ant colonies, folklore and tactical prototypes | TypeScript · Phaser · PixiJS · HTML5 |
 | **[GlowClient](https://glowclient.com)** | Practice management for medical aesthetics — booking, payments, clients | Full-stack TS |
 | **[NexusDialer](https://nexusdialer.com)** | Enterprise contact center with BYOS | Full-stack TS |
