@@ -3,7 +3,7 @@
 **Publication status:** draft<br>
 **Project status:** in daily use by the studio; private tooling<br>
 **Domains:** agent orchestration, developer tooling, Git workflow<br>
-**Evidence reviewed:** 2026-09-26<br>
+**Evidence reviewed:** 2026-09-27<br>
 **Public proof:** none. The source lives in a private configuration repository. This page describes the system shape only.
 
 ## The brief
@@ -76,8 +76,8 @@ From one working day (2026-09-25), recorded in the cockpit's own retrospective:
 
 - About 30 named agents across the workstation and the remote box. A live status
   read at one point showed 34 agents, 12 of them working.
-- 24 friction points logged as numbered rows during the day. Most were closed
-  the same day by a commit that cites the row.
+- 23 friction points logged as numbered rows during the day. 16 were fixed the
+  same day; three were still open at the end of it.
 - The deliverable check's first live run flagged two agents that had stopped
   mid-task. It correctly passed a third, whose last line was a real hand-off to
   the owner.
@@ -98,7 +98,8 @@ From one working day (2026-09-25), recorded in the cockpit's own retrospective:
   on "idle" alone meant the same brief ran twice. The rule now: read the
   messages and the tree before re-dispatching.
 - **Concurrency needs a per-provider cap.** Opening about 30 sessions at once
-  on one subscription got it rate-locked. That cap is still open work.
+  on one subscription got it rate-locked. A cap added that evening allows four
+  live agents per subscription by default.
 - Not yet proven: behaviour well past about 30 agents in a day, and anything
   beyond one workstation and one remote box.
 
