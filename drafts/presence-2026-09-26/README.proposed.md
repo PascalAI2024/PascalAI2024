@@ -289,9 +289,9 @@ maintained.
 
 Several coding agents from different vendors work side by side in visible
 terminal panes, each on its own branch in its own worktree, with one
-orchestrator merging. An agent saying "done" counts for nothing until its
-changed files and commits are found on disk. It has run about 30 agents in
-one working day.
+orchestrator merging. When an agent reports it is done, its changed files and
+commits are checked on disk before anything merges. It has run about 30 agents
+in one working day.
 [How it works](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/agent-cockpit.md).
 
 ### Sandbox fleet
