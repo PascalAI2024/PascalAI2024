@@ -1,23 +1,3 @@
-<!--
-  ____                       _    _    ___
- |  _ \ __ _ ___  ___ __ _  | |  / \  |_ _|
- | |_) / _` / __|/ __/ _` | | | / _ \  | |
- |  __/ (_| \__ \ (_| (_| | | |/ ___ \ | |
- |_|   \__,_|___/\___\__,_| |_/_/   \_\___|
-
-  Ingenious Digital · Fort Lauderdale · (954) 834-3426
-  pascal@ingeniousdigital.com
--->
-
-<!--
-  AGENTS EDITING THIS FILE: keep the visual layout. Twice an agent replaced it
-  with plain text and the owner had it restored (2026-09-04, 2026-10-14).
-  Keep the header picture, the typing tagline, the diagram, the benchmark chart,
-  the screenshot, the project cards, the tables and the skill-icon rows.
-  Change wording inside the layout. A redesign needs the owner's OK first;
-  put proposals under drafts/ and leave README.md alone.
--->
-
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/header-dark-v4.svg">
@@ -42,115 +22,145 @@
 
 ---
 
-I run **[Ingenious Digital](https://ingeniousdigital.com)**, a software and product
-studio in Fort Lauderdale. I work across the systems a business runs on:
-customer-facing websites and storefronts, CRM and communications, mobile and
-desktop applications, data workflows and AI-powered tools.
+# Pascal
 
-My engineering work also reaches into native developer tools, GPU performance,
-embedded firmware, games and simulation. I combine product design, systems
-architecture, implementation and technical direction, from defining the problem
-through integration, testing and ongoing improvement.
+I'm **Pascal**. I run **[Ingenious Digital](https://ingeniousdigital.com)**, a software and product studio based in Fort Lauderdale. I bring together product thinking, hands-on engineering and technical leadership: from client websites and commerce to CRM, mobile apps, AI infrastructure, data, games and low-level systems.
+
+I like taking an idea from the first useful question through architecture, design, implementation and ongoing improvement. The work below includes my own builds and studio projects made with collaborators; each description identifies my role where it matters.
 
 ---
 
-## Business software & client work
+## Tools I work with
 
-| Project | What it is | Stack |
-| :-- | :-- | :-- |
-| **[ButlerCRM](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/butlercrm.md)** | A CRM and collaboration workspace connecting customers, pipeline, projects and supervised AI work. [Product](https://butlercrm.com) | Elixir · Phoenix LiveView · PostgreSQL |
-| **[Overwatch](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/overwatch.md)** | Search intelligence and reporting that brings site performance, rankings and operational workflows into one working surface | TypeScript · React · TanStack Start · Bun · PostgreSQL |
-| **[NexusDialer](https://nexusdialer.com)** | Contact-center and campaign software. The web release has deployment evidence; native and carrier-media acceptance remain in progress | Elixir/Phoenix · React · TypeScript |
-| **[JarvisMCP](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/jarvismcp.md)** | Studio infrastructure for connecting AI agents to business tools and supervised workflows. Closed-source; the public case study describes the work | TypeScript · MCP |
-| **[Ladie One](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/ladie-one.md)** | An artist portfolio with editorial galleries and responsive project storytelling. [Live site](https://ladieone.com) | Next.js · React · TypeScript |
-| **[Healthy Glow Shopify](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/healthy-glow-shopify.md)** | Client storefront work across the theme, product pages and mobile shopping experience. [Store](https://shop.healthyglowaesthetics.com) | Shopify Liquid · JavaScript · CSS |
+**Web & commerce** · WordPress, Shopify, PHP, JavaScript, TypeScript, React, Next.js, Tailwind, HTML, CSS<br>
+<img src="https://skillicons.dev/icons?i=wordpress,php,ts,react,nextjs&theme=dark" alt="WordPress, PHP, TypeScript, React and Next.js" height="40">
 
-<a href="https://github.com/PascalAI2024/portfolio/blob/main/case-studies/ladie-one.md"><img src="https://raw.githubusercontent.com/PascalAI2024/portfolio/main/assets/ladie-one/ladie-one-featured-landscape-v3.png" alt="Ladie One artist website: actual six-project mural showcase designed and developed by Ingenious Digital" width="820"></a>
+**Backend & data** · Elixir, Node.js, Bun, Python, PostgreSQL, SQLite, FastAPI, Phoenix LiveView, SpacetimeDB, LightGBM<br>
+<img src="https://skillicons.dev/icons?i=elixir,nodejs,python,postgres,sqlite&theme=dark" alt="Elixir, Node.js, Python, PostgreSQL and SQLite" height="40">
 
-<sub>Ladie One: website design and development by Ingenious Digital; artwork and artist collaborations belong to Ladie One.</sub>
+**Systems & embedded** · Rust, Zig, C, C++, CUDA, ESP-IDF, workerd<br>
+<img src="https://skillicons.dev/icons?i=rust,zig,c,cpp,arduino&theme=dark" alt="Rust, Zig, C, C plus plus and embedded development" height="40">
 
-The studio also builds and maintains WordPress platforms and client sites,
-including [Healthy Glow Aesthetics](https://healthyglowaesthetics.com) and
-[The Fort Lauderdale MedSpa](https://thefortlauderdalemedspa.com). That work
-extends into SEO, analytics, lead capture, CRM integrations and post-launch
-maintenance.
+**Apps, games & graphics** · Flutter, Dart, Godot, Three.js, Svelte, Luau, Tauri, React Native<br>
+<img src="https://skillicons.dev/icons?i=flutter,dart,godot,threejs,svelte&theme=dark" alt="Flutter, Dart, Godot, Three.js and Svelte" height="40">
 
-### How JarvisMCP connects agents to business tools
-
-```mermaid
-flowchart TB
-    A["Coding agent"] -->|"search"| C["Capability catalogue<br/>Discoverable services"]
-    C -.->|"signature"| A
-    A -->|"execute"| S["Sandboxed isolate<br/>no credentials"]
-    S -->|"bounded call"| G["Gateway"]
-    G <--> V["Credential-holding services"]
-    S -->|"result"| A
-    H["Person"] -->|"approves writes"| G
-```
-
-Agent-authored code runs without credentials; the services that hold them sit
-outside that boundary, and a person approves writes.
-[Public architecture story](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/jarvismcp.md).
+**Infrastructure & tools** · Docker, GitHub Actions, Linux, Bash, PowerShell, Git, Cloudflare, MCP, WireGuard<br>
+<img src="https://skillicons.dev/icons?i=docker,githubactions,linux,git,cloudflare&theme=dark" alt="Docker, GitHub Actions, Linux, Git and Cloudflare" height="40">
 
 ---
 
-## Engineering in public
+[Tools](#tools-i-work-with) · [Mobile apps](#mobile-apps) · [Game lab](#igd-game-labs) · [Products](#products-and-systems) · [Client websites](#client-websites) · [Research](#data-research-and-engineering)
 
-<table>
-<tr>
-<td width="50%" valign="top">
+## Mobile apps
 
-### 🧪 [fplbench](https://github.com/PascalAI2024/fplbench)
-**Data engineering & applied ML**
+I led CallCue and ZeroInbox with contributions from Biruk and Mati. The two are listed on Google Play; the other apps are in development or testing.
 
-A leakage-aware Fantasy Premier League dataset and forecasting benchmark.
-Predictions are frozen before the deadline and scored against verified
-results, with a public evaluation record.
+### [CallCue](https://play.google.com/store/apps/details?id=com.ingeniousdigital.callcue) · live on Google Play
 
-`Python` · `LightGBM` · [dataset](https://huggingface.co/datasets/x0me/fplbench) · [live board](https://huggingface.co/spaces/x0me/fplbench-board)
+A call planner for follow-ups, holidays and contact campaigns.
 
-</td>
-<td width="50%" valign="top">
+<a href="https://play.google.com/store/apps/details?id=com.ingeniousdigital.callcue"><img src="assets/showcase/callcue-art.png" alt="CallCue app screens from its Google Play listing" width="850"></a>
 
-### ⚡ [Maple CUDA](https://github.com/PascalAI2024/maple-preview-windows-cuda)
-**GPU optimization**
+### [ZeroInbox](https://play.google.com/store/apps/details?id=com.igddev.zeroinbox) · live on Google Play
 
-Original CUDA optimization patches and benchmark tooling built on
-Maple/llama.cpp. Published experiments record generation from **52 to 377
-tok/s** and prompt processing from **1,457 to 10,674 tok/s**, with **103
-CPU-reference cases**. Results are hardware- and revision-specific.
+A Flutter Gmail cleanup game: group messages by sender, swipe through them and earn progress as you clear your inbox.
 
-`CUDA` · [case study](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/maple-cuda.md) · [benchmarks](https://huggingface.co/datasets/x0me/maple-preview-cuda-benchmarks)
+<a href="https://play.google.com/store/apps/details?id=com.igddev.zeroinbox"><img src="assets/showcase/zero-art.png" alt="ZeroInbox promotional screens from its Google Play listing" width="850"></a>
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+### More mobile work · in development or testing
 
-### 🐚 [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag)
-**Native developer tools**
+**SilentVoice** explores accessible communication and sign-language research. Translation and device acceptance remain unfinished; no public store release verified.
 
-An all-Zig shell workspace with native terminal hosts, a cross-platform
-launcher and a local AI sidecar. Active alpha, with tests and published
-prereleases.
+**[SK8Freak](https://sk8freak.com/)** is a fingerboard community app in development; mobile release unverified.
 
-`Zig` · [releases](https://github.com/PascalAI2024/ZiggyZag/releases)
+- **HerCircle** — an app exploring trusted circles and check-ins; public store release unverified.
+- **NexusDialer mobile** — a companion communications app in development; public store release unverified.
 
-</td>
-<td width="50%" valign="top">
+## IGD Game Labs
 
-### 🤖 [JarvisNano](https://github.com/PascalAI2024/JarvisNano)
-**Embedded firmware**
+The [IGD Games hub](https://games.igddev.com/) showcases browser-game experiments. Studio projects include:
 
-C/ESP-IDF firmware for an ESP32-S3 desk companion: touch display, live voice
-and device interaction. A tested hardware release candidate with remaining
-hardware verification gates.
+<a href="https://games.igddev.com/"><img src="assets/showcase/game-menu-framed-visual.png" alt="IGD Games browser game hub" width="850"></a>
 
-`C` · `ESP-IDF` · [architecture](https://github.com/PascalAI2024/JarvisNano/blob/main/docs/ARCHITECTURE.md)
+- **Conveyor Idle** — an early warehouse-building prototype featured on the hub.
+- **Gizmo Works** — circuit puzzles and working gadgets.
+- **SubTerra Lite** — guide an ant colony and its pheromone trails.
+- **Papardes Zieds** — puzzles inspired by Latvian folklore.
+- **Halligan** — a developing tactical planning prototype.
 
-</td>
-</tr>
-</table>
+`TypeScript` · `Phaser` · `PixiJS` · `HTML5` · [Game lab story](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/igd-games.md)
+
+## Products and systems
+
+<img src="assets/showcase/product-capabilities-visual.png" alt="Products and systems: ButlerCRM, Overwatch, JarvisMCP and igd-wp" width="850">
+
+### [ButlerCRM](https://butlercrm.com/) · customer work in one place
+
+A CRM workspace for relationships, projects and collaboration, with supervised AI workflows. I designed its architecture; access is available by request.
+
+### [Overwatch](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/overwatch.md) · search intelligence and operations
+
+I built Overwatch to bring search performance, analytics and site workflows into one working surface. [Public case study](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/overwatch.md)
+
+### [Asteria](https://tryasteria.com/) · a clearer view of the sky
+
+A birth-chart learning product with an interactive chart. [Explore Asteria](https://tryasteria.com/)
+
+### [NexusDialer](https://nexusdialer.com/) · communications software
+
+Communications software for campaigns, contacts and calling. Its mobile build is in development; public-store release is unverified.
+
+### [JarvisMCP](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/jarvismcp.md) · infrastructure for AI agents
+
+Infrastructure connecting AI agents with tools and workflows. Private source; public case study.
+
+### [igd-wp](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/igd-wp.md) · reusable WordPress platform
+
+I led the systems architecture and technical direction for shared capabilities, releases, testing and maintenance across client sites.
+
+## Client websites
+
+### [Healthy Glow Aesthetics](https://healthyglowaesthetics.com/) · WordPress
+
+Our studio works on this aesthetics practice's WordPress website: service discovery, content, booking pathways, SEO, analytics and ongoing improvements.
+
+<img src="assets/showcase/healthy-wordpress-homepage-pair.png" alt="Healthy Glow Aesthetics WordPress homepage on desktop and mobile" width="850">
+
+[View desktop capture](assets/showcase/healthy-wordpress-homepage-desktop.png) · [View mobile capture](assets/showcase/healthy-wordpress-homepage-mobile.png)
+
+### [The Fort Lauderdale MedSpa](https://thefortlauderdalemedspa.com/) · WordPress
+
+A separate med spa website built by our studio, with service information and a path to booking.
+
+<img src="assets/showcase/medspa-homepage-pair.png" alt="The Fort Lauderdale MedSpa homepage on desktop and mobile" width="850">
+
+[View desktop capture](assets/showcase/medspa-homepage-desktop.png) · [View mobile capture](assets/showcase/medspa-homepage-mobile.png)
+
+Our local-service website work also includes [Air Duct Cleaning Port St. Lucie](https://airductcleaningpsl.com/), [Clean Quality Air](https://cleanqualityair.com/) and [Cooling Experts](https://coolingexperts.com/).
+
+## Shopify commerce
+
+### [Healthy Glow Shop](https://shop.healthyglowaesthetics.com/) · Shopify
+
+I led the Shopify build for the Healthy Glow store, connecting its shopping experience to the practice's main website. [Case study](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/healthy-glow-shopify.md)
+
+<img src="assets/showcase/healthy-shopify-homepage-pair.png" alt="Healthy Glow Shopify homepage on desktop and mobile" width="850">
+
+[View desktop capture](assets/showcase/healthy-shopify-homepage-desktop.png) · [View mobile capture](assets/showcase/healthy-shopify-homepage-mobile.png)
+
+## Data, research and engineering
+
+### [Kaggle](https://www.kaggle.com/pascalledesma) · machine learning in the wild
+
+Research and competitions across reasoning, scientific data and agent security. I completed MIT IDSS's Data Science and Machine Learning program in 2025.
+
+### [fplbench](https://github.com/PascalAI2024/fplbench) · forecasts you can score
+
+A leakage-aware Fantasy Premier League dataset and benchmark. Predictions are frozen before the deadline and scored against verified results. `Python` · `LightGBM` · [live board](https://huggingface.co/spaces/x0me/fplbench-board)
+
+### [Maple CUDA](https://github.com/PascalAI2024/maple-preview-windows-cuda) · measuring the fast path
+
+CUDA optimization and benchmark tooling for Maple/llama.cpp. [Benchmarks](https://huggingface.co/datasets/x0me/maple-preview-cuda-benchmarks)
 
 <p align="center">
   <picture>
@@ -160,96 +170,30 @@ hardware verification gates.
   </picture>
 </p>
 
-| Project | Lane | Status |
-| :-- | :-- | :-- |
-| [fplbench](https://github.com/PascalAI2024/fplbench) | Data engineering & applied ML | Live benchmark with public evaluation record |
-| [Maple CUDA](https://github.com/PascalAI2024/maple-preview-windows-cuda) | GPU optimization | Published experiments |
-| [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag) | Native developer tools | Active alpha |
-| [JarvisNano](https://github.com/PascalAI2024/JarvisNano) | Embedded firmware | Hardware release candidate |
-| [Qwen Quant Bench](https://github.com/PascalAI2024/qwen38-27b-quant-bench) | LLM evaluation | Completed quantization research record |
-| [Verrow](https://github.com/PascalAI2024/verrow) | Data quality | Partial workbench prototype |
-| [PicoArmy](https://github.com/PascalAI2024/picoarmy) | Agent management | Prototype on the upstream picobot runtime |
-| [KinTunnel](https://github.com/PascalAI2024/kintunnel) | Networking | Tested dry-run MVP |
+### [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag) · a native Zig shell
+
+An alpha shell workspace with native terminal hosts, a cross-platform launcher and a local AI sidecar. `Zig`
+
+### [JarvisNano](https://github.com/PascalAI2024/JarvisNano) · a voice-first desk companion
+
+ESP32-S3 firmware combining a touch display, voice and device interaction. `C` · `ESP-IDF`
+
+| More public work | Focus |
+| :-- | :-- |
+| [Qwen Quant Bench](https://github.com/PascalAI2024/qwen38-27b-quant-bench) | Model evaluation |
+| [Verrow](https://github.com/PascalAI2024/verrow) | Data quality workbench prototype |
+| [KinTunnel](https://github.com/PascalAI2024/kintunnel) | Networking MVP |
+| [Selected engineering portfolio](https://github.com/PascalAI2024/portfolio) | Case studies and architecture |
 
 ---
 
-## Range, with project context
+## Keep learning
 
-| Area | Technologies used in project work | Examples |
-| :-- | :-- | :-- |
-| 💼 **Business applications** | Elixir, Phoenix/LiveView, TypeScript, React, PostgreSQL | ButlerCRM, NexusDialer, Overwatch |
-| 🌐 **Web & commerce** | PHP, WordPress, Shopify Liquid, JavaScript, Next.js, HTML/CSS | Agency WordPress platform, Healthy Glow, Ladie One |
-| 📱 **Mobile** | Dart/Flutter, TypeScript/React Native, SQLite | ReachOut calling workflows; ZeroChat on-device voice; SilentVoice research |
-| 🖥️ **Desktop & services** | Rust, Tauri, Axum, Svelte, React | ListKit; VibeFlow pre-release; Verrow prototype |
-| 📊 **Data & evaluation** | Python, LightGBM, PostgreSQL, SpacetimeDB | fplbench; lead-data processing and quality tools |
-| ⚙️ **Systems & performance** | Zig, C, CUDA, C++ toolchain, PowerShell, Shell | ZiggyZag; Maple CUDA; Qwen evaluation tooling |
-| 🔌 **Embedded** | ESP-IDF, ESP32-S3, C | JarvisNano |
-| 🎮 **Games & simulation** | Godot/GDScript, Rust/Bevy, Lua/Luau, TypeScript, PixiJS, Three.js | Arcanum First Spark release candidate; Roblox R&D; browser-game lab |
-| 🛠️ **Infrastructure & automation** | Node.js, MCP, Docker, GitHub Actions, Linux, WireGuard | Agent integrations, deployment tooling, KinTunnel MVP |
+[AI Fluency for Builders](https://verify.skilljar.com/c/me57yu2mc7sq) · [Claude Code in Action](https://verify.skilljar.com/c/d63sf2hoo6gt) · [Introduction to Model Context Protocol](https://verify.skilljar.com/c/jbf57tmrpdb6)
 
-### 🎮 Games & interactive products
+## Let's build something useful
 
-The [IGD Games lab](https://games.igddev.com) brings together browser
-experiments including **Gizmo Works**, **SubTerra Lite** and **Papardes Zieds**.
-Other work explores deterministic puzzle systems in Godot, emergent simulation
-in Rust/Bevy and game development in Roblox. Maturity ranges from prototypes to
-release candidates.
+[Ingenious Digital](https://ingeniousdigital.com) · [Selected work](https://github.com/PascalAI2024/portfolio) · [IGD Dev Lab](https://igddev.com) · [Kaggle](https://www.kaggle.com/pascalledesma) · [Hugging Face](https://huggingface.co/x0me) · [Email Pascal](mailto:pascal@ingeniousdigital.com)
 
-[Game-lab story](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/igd-games.md) · [More studio projects](https://igddev.com)
+<sub>Fort Lauderdale · working worldwide</sub>
 
----
-
-## Stack
-
-<table>
-<tr><td><b>Web<br/>& commerce</b></td><td>
-<img src="https://skillicons.dev/icons?i=wordpress,php,js,ts,react,nextjs,tailwind,vite&theme=dark" alt="WordPress, PHP, JavaScript, TypeScript, React, Next.js, Tailwind, Vite" height="48">
-<a href="https://shop.healthyglowaesthetics.com"><img src="https://img.shields.io/badge/Shopify-7AB55C?style=for-the-badge&logo=shopify&logoColor=white" alt="Shopify" height="48"></a>
-</td></tr>
-<tr><td><b>Backend<br/>& data</b></td><td>
-<img src="https://skillicons.dev/icons?i=nodejs,bun,elixir,python,postgres,sqlite&theme=dark" alt="Node.js, Bun, Elixir, Python, PostgreSQL, SQLite" height="48">
-</td></tr>
-<tr><td><b>Systems<br/>& embedded</b></td><td>
-<img src="https://skillicons.dev/icons?i=rust,zig,c,cpp,arduino&theme=dark" alt="Rust, Zig, C, C++, embedded" height="48">
-</td></tr>
-<tr><td><b>Apps, 3D<br/>& games</b></td><td>
-<img src="https://skillicons.dev/icons?i=flutter,dart,svelte,threejs,godot&theme=dark" alt="Flutter, Dart, Svelte, Three.js, Godot" height="48">
-</td></tr>
-<tr><td><b>Infra<br/>& tooling</b></td><td>
-<img src="https://skillicons.dev/icons?i=docker,githubactions,linux,bash,powershell,git&theme=dark" alt="Docker, GitHub Actions, Linux, Bash, PowerShell, Git" height="48">
-</td></tr>
-</table>
-
-Plus Tauri, Phoenix LiveView, CUDA, ESP-IDF, LightGBM and WireGuard, which
-don't have icons but do have project hours.
-
----
-
-## Work together
-
-I work with clients on product and systems design, custom software,
-integrations, automation and technical delivery. For a specific project, the
-most useful starting point is the workflow you need to improve, what already
-exists and what a successful result looks like.
-
-<p align="center">
-  <a href="https://ingeniousdigital.com/services"><b>Services</b></a> ·
-  <a href="https://ingeniousdigital.com/contact"><b>Contact</b></a> ·
-  <a href="mailto:pascal@ingeniousdigital.com"><b>pascal@ingeniousdigital.com</b></a> ·
-  (954) 834-3426<br>
-  <sub>Fort Lauderdale · Eastern time · Working worldwide</sub>
-</p>
-
-<p align="center">
-  <sub>
-    <a href="https://ingeniousdigital.com">ingeniousdigital.com</a> ·
-    <a href="https://igddev.com">igddev.com</a> ·
-    <a href="https://huggingface.co/x0me">huggingface.co/x0me</a> ·
-    <a href="https://github.com/PascalAI2024/portfolio">portfolio</a>
-  </sub>
-</p>
-
-<!--
-  You went looking in the source. Respect.
-  pascal@ingeniousdigital.com — mention the ASCII art.
--->
