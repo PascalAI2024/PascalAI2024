@@ -15,7 +15,7 @@
 <p align="center">
   <a href="https://ingeniousdigital.com"><b>Ingenious Digital</b></a> ·
   <a href="https://github.com/PascalAI2024/portfolio">Selected work</a> ·
-  <a href="https://igddev.com">IGD Dev Lab</a> ·
+  <a href="https://labs.ingeniousdigital.com">IGD Dev Lab</a> ·
   <a href="https://huggingface.co/x0me">Hugging Face</a> ·
   <a href="mailto:pascal@ingeniousdigital.com"><b>pascal@ingeniousdigital.com</b></a>
 </p>
@@ -193,7 +193,7 @@ ESP32-S3 firmware combining a touch display, voice and device interaction. `C` �
 
 ## Let's build something useful
 
-[Ingenious Digital](https://ingeniousdigital.com) · [Selected work](https://github.com/PascalAI2024/portfolio) · [IGD Dev Lab](https://igddev.com) · [Kaggle](https://www.kaggle.com/pascalledesma) · [Hugging Face](https://huggingface.co/x0me) · [Email Pascal](mailto:pascal@ingeniousdigital.com)
+[Ingenious Digital](https://ingeniousdigital.com) · [Selected work](https://github.com/PascalAI2024/portfolio) · [IGD Dev Lab](https://labs.ingeniousdigital.com) · [Kaggle](https://www.kaggle.com/pascalledesma) · [Hugging Face](https://huggingface.co/x0me) · [Email Pascal](mailto:pascal@ingeniousdigital.com)
 
 <sub>Fort Lauderdale · working worldwide</sub>
 
