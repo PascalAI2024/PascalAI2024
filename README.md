@@ -78,9 +78,9 @@ A Flutter Gmail cleanup game: group messages by sender, swipe through them and e
 
 ## IGD Game Labs
 
-The [IGD Games hub](https://games.igddev.com/) showcases browser-game experiments. Studio projects include:
+The [IGD Games hub](https://games.ingeniousdigital.com/) showcases browser-game experiments. Studio projects include:
 
-<a href="https://games.igddev.com/"><img src="assets/showcase/game-menu-framed-visual.png" alt="IGD Games browser game hub" width="850"></a>
+<a href="https://games.ingeniousdigital.com/"><img src="assets/showcase/game-menu-framed-visual.png" alt="IGD Games browser game hub" width="850"></a>
 
 - **Conveyor Idle** — an early warehouse-building prototype featured on the hub.
 - **Gizmo Works** — circuit puzzles and working gadgets.
