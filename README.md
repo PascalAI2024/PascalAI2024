@@ -30,6 +30,14 @@ I like taking an idea from the first useful question through architecture, desig
 
 ---
 
+## The studio in 73 seconds
+
+<a href="https://www.youtube.com/watch?v=_apSy5T-q_0"><img src="assets/film/agency-film-poster.jpg" alt="Play the Ingenious Digital agency film: 73 seconds covering mobile apps, websites and stores, AI platforms and a working 3D watch escapement" width="850"></a>
+
+A short film of the studio's work: mobile apps, client sites and stores, AI platforms and a working watch escapement. [Watch it on YouTube](https://www.youtube.com/watch?v=_apSy5T-q_0). The [ingeniousdigital.com](https://ingeniousdigital.com) homepage shows 29 more real screens: client sites, our web apps and our Android apps.
+
+---
+
 ## Tools I work with
 
 **Web & commerce** · WordPress, Shopify, PHP, JavaScript, TypeScript, React, Next.js, Tailwind, HTML, CSS<br>
@@ -49,7 +57,81 @@ I like taking an idea from the first useful question through architecture, desig
 
 ---
 
-[Tools](#tools-i-work-with) · [Mobile apps](#mobile-apps) · [Game lab](#igd-game-labs) · [Products](#products-and-systems) · [Client websites](#client-websites) · [Research](#data-research-and-engineering)
+[Film](#the-studio-in-73-seconds) · [Tools](#tools-i-work-with) · [Products](#products-and-systems) · [3D](#interactive-3d) · [Mobile apps](#mobile-apps) · [Game lab](#igd-game-labs) · [Client websites](#client-websites) · [Research](#data-research-and-engineering)
+
+## Products and systems
+
+Studio products and public projects. Screens are from the live apps or demo data; each links to its case study or repository.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://ingeniousdigital.com/work/butler-crm"><img src="assets/work/butler-crm.jpg" alt="ButlerCRM workspace, shown with demo data"></a><br>
+      <b><a href="https://ingeniousdigital.com/work/butler-crm">ButlerCRM</a></b><br>
+      Contacts, deals, email, calendar and tasks in one workspace that updates live for everyone in it. Elixir and Phoenix. I designed its architecture.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://ingeniousdigital.com/work/overwatch"><img src="assets/work/overwatch.jpg" alt="Overwatch mission view"></a><br>
+      <b><a href="https://ingeniousdigital.com/work/overwatch">Overwatch</a></b><br>
+      Shows how a site is found in classic search, in AI answers and on the local map, then proposes fixes. Nothing reaches a live site until a person approves it.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://ingeniousdigital.com/work/nexus-dialer"><img src="assets/work/nexusdialer.jpg" alt="NexusDialer contact-center screen"></a><br>
+      <b><a href="https://ingeniousdigital.com/work/nexus-dialer">NexusDialer</a></b><br>
+      Outbound calling, the contact record and a personal AI assistant on one screen, on the web and on the phone. Progressive dialing, still being built out.
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://ingeniousdigital.com/work/asteria"><img src="assets/work/asteria.jpg" alt="Asteria birth-chart wheel"></a><br>
+      <b><a href="https://ingeniousdigital.com/work/asteria">Asteria</a></b><br>
+      A birth-chart learning product that keeps calculated fact separate from interpretation. A Rust calculation engine and a React client.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://ingeniousdigital.com/work/tracekill"><img src="assets/work/tracekill.jpg" alt="TraceKill dashboard"></a><br>
+      <b><a href="https://ingeniousdigital.com/work/tracekill">TraceKill</a></b><br>
+      Scans data-broker sites for a person's information, files the removal requests and keeps checking, because the data tends to come back.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://ingeniousdigital.com/work/polyhuntr"><img src="assets/work/polyhuntr.jpg" alt="PolyHuntr market and wallet view"></a><br>
+      <b><a href="https://ingeniousdigital.com/work/polyhuntr">PolyHuntr</a></b><br>
+      Follows Polymarket as it moves, ranks the public wallets worth watching and explains any market or wallet on demand.
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://github.com/PascalAI2024/verrow"><img src="assets/work/verrow.jpg" alt="Verrow data workbench dashboard"></a><br>
+      <b><a href="https://github.com/PascalAI2024/verrow">Verrow</a></b><br>
+      A data-quality workbench prototype that turns raw lead files into trusted records. Rust CSV ingestion and column mapping are implemented; the rest is prototype.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/PascalAI2024/kintunnel"><img src="assets/work/kintunnel.jpg" alt="KinTunnel admin peers screen"></a><br>
+      <b><a href="https://github.com/PascalAI2024/kintunnel">KinTunnel</a></b><br>
+      An open-source, Docker-native WireGuard manager in TypeScript, with rollback, drift detection and a token-gated admin UI. A dry-run MVP; live-server validation is still open.
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/PascalAI2024/JarvisNano"><img src="assets/work/jarvisnano.jpg" alt="JarvisNano desk-companion dashboard"></a><br>
+      <b><a href="https://github.com/PascalAI2024/JarvisNano">JarvisNano</a></b><br>
+      ESP32-S3 firmware for a voice-first desk companion with a touch display, in C on ESP-IDF. The hardware verification gates are still open.
+    </td>
+  </tr>
+</table>
+
+### [JarvisMCP](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/jarvismcp.md) · infrastructure for AI agents
+
+Infrastructure connecting AI agents with tools and workflows. Private source; public case study.
+
+### [igd-wp](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/igd-wp.md) · reusable WordPress platform
+
+I led the systems architecture and technical direction for shared capabilities, releases, testing and maintenance across client sites.
+
+## Interactive 3D
+
+### [Swiss lever escapement](https://ingeniousdigital.com/showcase/escapement.html) · a working watch mechanism
+
+<a href="https://ingeniousdigital.com/showcase/escapement.html"><img src="assets/work/escapement.jpg" alt="Three.js model of a Swiss lever escapement: escape wheel, pallet fork and balance wheel" width="850"></a>
+
+A Three.js model of the lever escapement in an ETA 2824-2 class movement, running at 28,800 beats an hour. Watch time is the only input, and it sets the pose of every part and every gauge. The figures come from published movement data; the sources file marks which values are modelled. [Open the model](https://ingeniousdigital.com/showcase/escapement.html) · [Case study](https://ingeniousdigital.com/work/escapement-simulator)
 
 ## Mobile apps
 
@@ -69,9 +151,9 @@ A Flutter Gmail cleanup game: group messages by sender, swipe through them and e
 
 ### More mobile work · in development or testing
 
-**SilentVoice** explores accessible communication and sign-language research. Translation and device acceptance remain unfinished; no public store release verified.
-
 **[SK8Freak](https://sk8freak.com/)** is a fingerboard community app in development; mobile release unverified.
+
+**[SilentVoice](https://silentvoice.ingeniousdigital.com)** is an offline sign-language research prototype, built with AI agents: a React Native app with on-device MediaPipe hand tracking and a PyTorch training pipeline. Its models reach 59.4% top-1 and 83.2% top-5 on 13,571 held-out sequences of a 250-sign American Sign Language benchmark. That is an offline benchmark result, not real signing. Ethiopian Sign Language recognition is not built yet. ASL data: PopSign, CC BY 4.0.
 
 - **HerCircle** — an app exploring trusted circles and check-ins; public store release unverified.
 - **NexusDialer mobile** — a companion communications app in development; public store release unverified.
@@ -89,34 +171,6 @@ The [IGD Games hub](https://games.ingeniousdigital.com/) showcases browser-game 
 - **Halligan** — a developing tactical planning prototype.
 
 `TypeScript` · `Phaser` · `PixiJS` · `HTML5` · [Game lab story](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/igd-games.md)
-
-## Products and systems
-
-<img src="assets/showcase/product-capabilities-visual.png" alt="Products and systems: ButlerCRM, Overwatch, JarvisMCP and igd-wp" width="850">
-
-### [ButlerCRM](https://butlercrm.com/) · customer work in one place
-
-A CRM workspace for relationships, projects and collaboration, with supervised AI workflows. I designed its architecture; access is available by request.
-
-### [Overwatch](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/overwatch.md) · search intelligence and operations
-
-I built Overwatch to bring search performance, analytics and site workflows into one working surface. [Public case study](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/overwatch.md)
-
-### [Asteria](https://tryasteria.com/) · a clearer view of the sky
-
-A birth-chart learning product with an interactive chart. [Explore Asteria](https://tryasteria.com/)
-
-### [NexusDialer](https://nexusdialer.com/) · communications software
-
-Communications software for campaigns, contacts and calling. Its mobile build is in development; public-store release is unverified.
-
-### [JarvisMCP](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/jarvismcp.md) · infrastructure for AI agents
-
-Infrastructure connecting AI agents with tools and workflows. Private source; public case study.
-
-### [igd-wp](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/igd-wp.md) · reusable WordPress platform
-
-I led the systems architecture and technical direction for shared capabilities, releases, testing and maintenance across client sites.
 
 ## Client websites
 
@@ -136,7 +190,7 @@ A separate med spa website built by our studio, with service information and a p
 
 [View desktop capture](assets/showcase/medspa-homepage-desktop.png) · [View mobile capture](assets/showcase/medspa-homepage-mobile.png)
 
-Our local-service website work also includes [Air Duct Cleaning Port St. Lucie](https://airductcleaningpsl.com/), [Clean Quality Air](https://cleanqualityair.com/) and [Cooling Experts](https://coolingexperts.com/).
+Our local-service website work also includes [Air Duct Cleaning Port St. Lucie](https://airductcleaningpsl.com/) and [Cooling Experts](https://coolingexperts.com/).
 
 ## Shopify commerce
 
@@ -174,15 +228,9 @@ CUDA optimization and benchmark tooling for Maple/llama.cpp. [Benchmarks](https:
 
 An alpha shell workspace with native terminal hosts, a cross-platform launcher and a local AI sidecar. `Zig`
 
-### [JarvisNano](https://github.com/PascalAI2024/JarvisNano) · a voice-first desk companion
-
-ESP32-S3 firmware combining a touch display, voice and device interaction. `C` · `ESP-IDF`
-
 | More public work | Focus |
 | :-- | :-- |
 | [Qwen Quant Bench](https://github.com/PascalAI2024/qwen38-27b-quant-bench) | Model evaluation |
-| [Verrow](https://github.com/PascalAI2024/verrow) | Data quality workbench prototype |
-| [KinTunnel](https://github.com/PascalAI2024/kintunnel) | Networking MVP |
 | [Selected engineering portfolio](https://github.com/PascalAI2024/portfolio) | Case studies and architecture |
 
 ---
