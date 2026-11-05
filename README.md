@@ -65,54 +65,51 @@ Studio products and public projects. Screens are from the live apps or demo data
 
 <table>
   <tr>
-    <td width="33%" valign="top">
-      <a href="https://ingeniousdigital.com/work/butler-crm"><img src="assets/work/butler-crm.jpg" alt="ButlerCRM workspace, shown with demo data"></a><br>
+    <td width="50%" valign="top">
+      <a href="https://ingeniousdigital.com/work/butler-crm"><img src="assets/work/butler-crm.jpg" alt="ButlerCRM workspace, shown with demo data" width="100%"></a><br>
       <b><a href="https://ingeniousdigital.com/work/butler-crm">ButlerCRM</a></b><br>
-      Contacts, deals, email, calendar and tasks in one workspace that updates live for everyone in it. Elixir and Phoenix. I designed its architecture.
+      Contacts, deals, email, calendar and tasks in one workspace that updates live. Elixir and Phoenix. I designed its architecture.
     </td>
-    <td width="33%" valign="top">
-      <a href="https://ingeniousdigital.com/work/overwatch"><img src="assets/work/overwatch.jpg" alt="Overwatch mission view"></a><br>
+    <td width="50%" valign="top">
+      <a href="https://ingeniousdigital.com/work/overwatch"><img src="assets/work/overwatch.jpg" alt="Overwatch mission view" width="100%"></a><br>
       <b><a href="https://ingeniousdigital.com/work/overwatch">Overwatch</a></b><br>
-      Shows how a site is found in classic search, in AI answers and on the local map, then proposes fixes. Nothing reaches a live site until a person approves it.
+      Shows how a site is found in search, AI answers and the local map, then proposes fixes. A person approves each one.
     </td>
-    <td width="33%" valign="top">
-      <a href="https://ingeniousdigital.com/work/nexus-dialer"><img src="assets/work/nexusdialer.jpg" alt="NexusDialer contact-center screen"></a><br>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://ingeniousdigital.com/work/nexus-dialer"><img src="assets/work/nexusdialer.jpg" alt="NexusDialer contact-center screen" width="100%"></a><br>
       <b><a href="https://ingeniousdigital.com/work/nexus-dialer">NexusDialer</a></b><br>
-      Outbound calling, the contact record and a personal AI assistant on one screen, on the web and on the phone. Progressive dialing, still being built out.
+      Outbound calling, the contact record and an AI assistant on one screen. Progressive dialing, still being built out.
     </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top">
-      <a href="https://ingeniousdigital.com/work/asteria"><img src="assets/work/asteria.jpg" alt="Asteria birth-chart wheel"></a><br>
+    <td width="50%" valign="top">
+      <a href="https://ingeniousdigital.com/work/asteria"><img src="assets/work/asteria.jpg" alt="Asteria birth-chart wheel" width="100%"></a><br>
       <b><a href="https://ingeniousdigital.com/work/asteria">Asteria</a></b><br>
-      A birth-chart learning product that keeps calculated fact separate from interpretation. A Rust calculation engine and a React client.
-    </td>
-    <td width="33%" valign="top">
-      <a href="https://ingeniousdigital.com/work/tracekill"><img src="assets/work/tracekill.jpg" alt="TraceKill dashboard"></a><br>
-      <b><a href="https://ingeniousdigital.com/work/tracekill">TraceKill</a></b><br>
-      Scans data-broker sites for a person's information, files the removal requests and keeps checking, because the data tends to come back.
-    </td>
-    <td width="33%" valign="top">
-      <a href="https://ingeniousdigital.com/work/polyhuntr"><img src="assets/work/polyhuntr.jpg" alt="PolyHuntr market and wallet view"></a><br>
-      <b><a href="https://ingeniousdigital.com/work/polyhuntr">PolyHuntr</a></b><br>
-      Follows Polymarket as it moves, ranks the public wallets worth watching and explains any market or wallet on demand.
+      A birth-chart learning product that keeps calculated fact separate from interpretation. Rust engine, React client.
     </td>
   </tr>
   <tr>
-    <td width="33%" valign="top">
-      <a href="https://github.com/PascalAI2024/verrow"><img src="assets/work/verrow.jpg" alt="Verrow data workbench dashboard"></a><br>
+    <td width="50%" valign="top">
+      <a href="https://ingeniousdigital.com/work/tracekill"><img src="assets/work/tracekill.jpg" alt="TraceKill dashboard" width="100%"></a><br>
+      <b><a href="https://ingeniousdigital.com/work/tracekill">TraceKill</a></b><br>
+      Scans data-broker sites for a person's information, files removal requests and keeps checking.
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://ingeniousdigital.com/work/polyhuntr"><img src="assets/work/polyhuntr.jpg" alt="PolyHuntr market and wallet view" width="100%"></a><br>
+      <b><a href="https://ingeniousdigital.com/work/polyhuntr">PolyHuntr</a></b><br>
+      Follows Polymarket, ranks the public wallets worth watching and explains any market or wallet.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/PascalAI2024/verrow"><img src="assets/work/verrow.jpg" alt="Verrow data workbench dashboard" width="100%"></a><br>
       <b><a href="https://github.com/PascalAI2024/verrow">Verrow</a></b><br>
-      A data-quality workbench prototype that turns raw lead files into trusted records. Rust CSV ingestion and column mapping are implemented; the rest is prototype.
+      A data-quality workbench prototype for raw lead files. Rust CSV ingestion and column mapping are implemented.
     </td>
-    <td width="33%" valign="top">
-      <a href="https://github.com/PascalAI2024/kintunnel"><img src="assets/work/kintunnel.jpg" alt="KinTunnel admin peers screen"></a><br>
+    <td width="50%" valign="top">
+      <a href="https://github.com/PascalAI2024/kintunnel"><img src="assets/work/kintunnel.jpg" alt="KinTunnel admin peers screen" width="100%"></a><br>
       <b><a href="https://github.com/PascalAI2024/kintunnel">KinTunnel</a></b><br>
-      An open-source, Docker-native WireGuard manager in TypeScript, with rollback, drift detection and a token-gated admin UI. A dry-run MVP; live-server validation is still open.
-    </td>
-    <td width="33%" valign="top">
-      <a href="https://github.com/PascalAI2024/JarvisNano"><img src="assets/work/jarvisnano.jpg" alt="JarvisNano desk-companion dashboard"></a><br>
-      <b><a href="https://github.com/PascalAI2024/JarvisNano">JarvisNano</a></b><br>
-      ESP32-S3 firmware for a voice-first desk companion with a touch display, in C on ESP-IDF. The hardware verification gates are still open.
+      Open-source Docker-native WireGuard manager in TypeScript. A dry-run MVP; live-server validation is open.
     </td>
   </tr>
 </table>
@@ -223,6 +220,10 @@ CUDA optimization and benchmark tooling for Maple/llama.cpp. [Benchmarks](https:
     <img alt="Maple CUDA measured throughput: generation 52 to 377 tokens per second (7.2x), prompt processing 1,457 to 10,674 tokens per second (7.3x), 103 of 103 CPU-reference cases passed" src="https://raw.githubusercontent.com/PascalAI2024/PascalAI2024/main/assets/bench-dark.svg" width="100%">
   </picture>
 </p>
+
+### [JarvisNano](https://github.com/PascalAI2024/JarvisNano) · a voice-first desk companion
+
+ESP32-S3 firmware with a touch display, in C on ESP-IDF. The hardware verification gates are still open.
 
 ### [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag) · a native Zig shell
 
