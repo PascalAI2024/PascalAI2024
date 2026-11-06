@@ -40,20 +40,27 @@ A short film of the studio's work: mobile apps, client sites and stores, AI plat
 
 ## Tools I work with
 
-**Web & commerce** · WordPress, Shopify, PHP, JavaScript, TypeScript, React, Next.js, Tailwind, HTML, CSS<br>
-<img src="https://skillicons.dev/icons?i=wordpress,php,ts,react,nextjs&theme=dark" alt="WordPress, PHP, TypeScript, React and Next.js" height="40">
+**Web & commerce** · WordPress, Shopify, PHP, JavaScript, TypeScript, React, Next.js, Astro, Svelte, Tailwind, Vite, HTML, CSS, Stripe<br>
+<img src="https://skillicons.dev/icons?i=wordpress,php,js,ts,html,css,react,nextjs,astro,svelte,tailwind,vite&theme=dark" alt="WordPress, PHP, JavaScript, TypeScript, HTML, CSS, React, Next.js, Astro, Svelte, Tailwind and Vite" height="40"><br>
+<img src="https://img.shields.io/badge/Shopify-96BF48?style=flat-square&logo=shopify&logoColor=white" alt="Shopify"> <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" alt="Stripe">
 
-**Backend & data** · Elixir, Node.js, Bun, Python, PostgreSQL, SQLite, FastAPI, Phoenix LiveView, SpacetimeDB, LightGBM<br>
-<img src="https://skillicons.dev/icons?i=elixir,nodejs,python,postgres,sqlite&theme=dark" alt="Elixir, Node.js, Python, PostgreSQL and SQLite" height="40">
+**Backend & data** · Elixir, Phoenix LiveView, Oban, Node.js, Bun, Python, FastAPI, PostgreSQL, SQLite, Redis, Supabase, Prisma, SpacetimeDB, LightGBM<br>
+<img src="https://skillicons.dev/icons?i=elixir,nodejs,bun,python,fastapi,postgres,sqlite,redis,supabase,prisma&theme=dark" alt="Elixir, Node.js, Bun, Python, FastAPI, PostgreSQL, SQLite, Redis, Supabase and Prisma" height="40"><br>
+<img src="https://img.shields.io/badge/Phoenix_LiveView-FD4F00?style=flat-square&logo=phoenixframework&logoColor=white" alt="Phoenix LiveView"> <img src="https://img.shields.io/badge/Oban-4B275F?style=flat-square" alt="Oban">
 
 **Systems & embedded** · Rust, Zig, C, C++, CUDA, ESP-IDF, workerd<br>
-<img src="https://skillicons.dev/icons?i=rust,zig,c,cpp,arduino&theme=dark" alt="Rust, Zig, C, C plus plus and embedded development" height="40">
+<img src="https://skillicons.dev/icons?i=rust,zig,c,cpp,arduino&theme=dark" alt="Rust, Zig, C, C plus plus and embedded development" height="40"><br>
+<img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="CUDA"> <img src="https://img.shields.io/badge/ESP--IDF-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP-IDF">
 
 **Apps, games & graphics** · Flutter, Dart, Godot, Three.js, Svelte, Luau, Tauri, React Native<br>
-<img src="https://skillicons.dev/icons?i=flutter,dart,godot,threejs,svelte&theme=dark" alt="Flutter, Dart, Godot, Three.js and Svelte" height="40">
+<img src="https://skillicons.dev/icons?i=flutter,dart,godot,threejs,svelte,tauri&theme=dark" alt="Flutter, Dart, Godot, Three.js, Svelte and Tauri" height="40">
 
-**Infrastructure & tools** · Docker, GitHub Actions, Linux, Bash, PowerShell, Git, Cloudflare, MCP, WireGuard<br>
-<img src="https://skillicons.dev/icons?i=docker,githubactions,linux,git,cloudflare&theme=dark" alt="Docker, GitHub Actions, Linux, Git and Cloudflare" height="40">
+**AI & agents** · MCP, Claude, OpenAI, Gemini, n8n<br>
+<img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=modelcontextprotocol&logoColor=white" alt="MCP"> <img src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=claude&logoColor=white" alt="Claude"> <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square" alt="OpenAI"> <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini"> <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n">
+
+**Cloud, infra & DevOps** · Cloudflare (Workers, D1, KV, Durable Objects, DNS), Docker, Docker Swarm, Traefik, Dokploy, GitHub Actions, Linux, Nginx, Bash, PowerShell, Git, WireGuard<br>
+<img src="https://skillicons.dev/icons?i=cloudflare,workers,docker,githubactions,linux,nginx,bash,powershell,git,github&theme=dark" alt="Cloudflare, Cloudflare Workers, Docker, GitHub Actions, Linux, Nginx, Bash, PowerShell, Git and GitHub" height="40"><br>
+<img src="https://img.shields.io/badge/Cloudflare_D1-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare D1"> <img src="https://img.shields.io/badge/Cloudflare_KV-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare KV"> <img src="https://img.shields.io/badge/Durable_Objects-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare Durable Objects"> <img src="https://img.shields.io/badge/Traefik-24A1C1?style=flat-square&logo=traefikproxy&logoColor=white" alt="Traefik"> <img src="https://img.shields.io/badge/Dokploy-444444?style=flat-square" alt="Dokploy"> <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square" alt="Playwright">
 
 ---
 
