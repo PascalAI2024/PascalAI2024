@@ -26,6 +26,8 @@
 
 I'm **Pascal**. I run **[Ingenious Digital](https://ingeniousdigital.com)**, a software and product studio based in Fort Lauderdale. I bring together product thinking, hands-on engineering and technical leadership: from client websites and commerce to CRM, mobile apps, AI infrastructure, data, games and low-level systems.
 
+Most of the last month went into agent infrastructure: a gateway that gives AI agents tools and shared memory, a cockpit that runs coding agents on cloud and remote machines, and the controls around them. [How that work is run](#how-agent-work-is-run) is below.
+
 I like taking an idea from the first useful question through architecture, design, implementation and ongoing improvement. The work below includes my own builds and studio projects made with collaborators; each description identifies my role where it matters.
 
 ---
@@ -64,7 +66,7 @@ A short film of the studio's work: mobile apps, client sites and stores, AI plat
 
 ---
 
-[Film](#the-studio-in-73-seconds) · [Tools](#tools-i-work-with) · [Products](#products-and-systems) · [3D](#interactive-3d) · [Mobile apps](#mobile-apps) · [Game lab](#igd-game-labs) · [Client websites](#client-websites) · [Research](#data-research-and-engineering)
+[Film](#the-studio-in-73-seconds) · [Tools](#tools-i-work-with) · [Products](#products-and-systems) · [Agent work](#how-agent-work-is-run) · [3D](#interactive-3d) · [Mobile apps](#mobile-apps) · [Game lab](#igd-game-labs) · [Client websites](#client-websites) · [Research](#data-research-and-engineering)
 
 ## Products and systems
 
@@ -87,7 +89,7 @@ Studio products and public projects. Screens are from the live apps or demo data
     <td width="50%" valign="top">
       <a href="https://ingeniousdigital.com/work/nexus-dialer"><img src="assets/work/nexusdialer.jpg" alt="NexusDialer contact-center screen" width="100%"></a><br>
       <b><a href="https://ingeniousdigital.com/work/nexus-dialer">NexusDialer</a></b><br>
-      Outbound calling, the contact record and an AI assistant on one screen. Progressive dialing, still being built out.
+      Outbound calling, the contact record and an AI assistant on one screen. AI voice agents place and take calls over Plivo audio streams, with consent certificates checked before an AI campaign dials. A 13-scenario test harness has one AI agent play the caller and another the client. Still being built out.
     </td>
     <td width="50%" valign="top">
       <a href="https://ingeniousdigital.com/work/asteria"><img src="assets/work/asteria.jpg" alt="Asteria birth-chart wheel" width="100%"></a><br>
@@ -123,11 +125,21 @@ Studio products and public projects. Screens are from the live apps or demo data
 
 ### [JarvisMCP](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/jarvismcp.md) · infrastructure for AI agents
 
-Infrastructure connecting AI agents with tools and workflows. Private source; public case study.
+Infrastructure connecting AI agents with tools and workflows: a gateway of about 60 services, a searchable memory layer over our own notes, and a sandbox for agent code. Recent work covers short-lived GitHub access for agent machines and a secrets vault that is in rollout. Private source; public case study.
 
 ### [igd-wp](https://github.com/PascalAI2024/portfolio/blob/main/case-studies/igd-wp.md) · reusable WordPress platform
 
 I led the systems architecture and technical direction for shared capabilities, releases, testing and maintenance across client sites.
+
+## How agent work is run
+
+Coding agents do much of the building here, so the rules around them matter as much as the agents. These are the current ones.
+
+- **Where jobs run.** A job goes to a cloud agent first (Claude, Codex or Cursor, depending on the repo), then to a remote Linux machine, and to my own PC only when it needs something that exists only there. Each project has one lead agent that splits the work across a few subagents.
+- **Every agent works a leased item.** An agent claims one work item on a shared board, reports progress while it works, and finishes with evidence: complete, blocked with one question, or failed. A chat summary does not close an item.
+- **Two gates before anything lands.** A deterministic build and test gate runs first. A review by a model from a second vendor follows. Findings are fixed before the change merges.
+- **Short-lived GitHub access.** Agent machines get tokens that last one hour and cover one repository. Every token issued is written to an audit log.
+- **Secrets stay out of agents.** Coding agents start with secrets removed from their environment. A secrets vault with short-lived credentials, a one-time handoff that expires after 60 seconds, and recovery shares held by me is in rollout; it is not finished.
 
 ## Interactive 3D
 
@@ -230,7 +242,7 @@ CUDA optimization and benchmark tooling for Maple/llama.cpp. [Benchmarks](https:
 
 ### [JarvisNano](https://github.com/PascalAI2024/JarvisNano) · a voice-first desk companion
 
-ESP32-S3 firmware with a touch display, in C on ESP-IDF. The hardware verification gates are still open.
+ESP32-S3 firmware with a touch display, in C on ESP-IDF. Recent releases added smoother screen transitions, a small aquarium that grows while you work, and Gemini Live 3.8 for voice. The hardware verification gates are still open.
 
 ### [ZiggyZag](https://github.com/PascalAI2024/ZiggyZag) · a native Zig shell
 
